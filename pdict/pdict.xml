@@ -1,0 +1,2661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="pdict.css" type="text/css"?>
+<!DOCTYPE particles [
+
+
+	<!ELEMENT particles (license, notice, gyou*)>
+	<!ELEMENT gyou (entry*)>
+
+	<!-- license structure -->
+	<!ELEMENT license (header, body)>
+	<!ELEMENT header (line*)>
+	<!ELEMENT body (para*,line*)*>
+
+	<!-- notice structure -->
+	<!ELEMENT notice (para*)>
+	<!ELEMENT para (#PCDATA)>
+	<!ELEMENT line (#PCDATA)>
+
+	<!-- row marker -->
+	<!ELEMENT gyou (#PCDATA)>
+	<!ATTLIST gyou kana CDATA #REQUIRED>
+
+	<!-- entry structure -->
+	<!ELEMENT entry (particle, literary*, compound?, use, description, roles?, contrast*, see*, example*)>
+	<!ATTLIST entry id CDATA #REQUIRED>
+
+	<!ELEMENT particle (#PCDATA)>
+	<!ELEMENT literary (#PCDATA)>
+	<!ELEMENT compound (#PCDATA)>
+	<!ELEMENT use (#PCDATA)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT roles (role*)>
+	<!ELEMENT role (#PCDATA)>
+
+	<!ELEMENT contrast (#PCDATA)>
+	<!ATTLIST contrast id CDATA #IMPLIED>
+
+	<!ELEMENT see (#PCDATA)>
+	<!ATTLIST see id CDATA #IMPLIED>
+	
+		<!-- example structure -->
+		<!ELEMENT example (phrase, phrase, explanation)>
+		<!ATTLIST example role CDATA #IMPLIED>
+		<!ELEMENT phrase (CDATA,p*,ruby*)*>
+		<!ATTLIST phrase lang CDATA #REQUIRED>
+		<!ELEMENT explanation (#PCDATA)>
+	
+	<!-- particle highlight -->
+	<!ELEMENT p (#PCDATA)>
+	<!-- particle subordinate construction highlight -->
+	<!ELEMENT s (#PCDATA)>
+	
+	<!-- simple ruby markup -->
+	<!ELEMENT ruby (rb, rt)>
+	<!ELEMENT rb (#PCDATA)>
+	<!ELEMENT rt (#PCDATA)>
+
+]>
+
+<particles header="A Japanese mostly-suffix dictionary">
+
+<!--
+	一人だけでしました。　emphasizes the fact you were alone
+
+	一人でやりました。 emphasizes the fact you did it on your own
+-->
+
+	<license>
+		<header>
+			<line>An XML Japanese mostly-suffix dictionary</line>
+			<line>Composed and written by Michiel Kamermans</line>
+			<line>(c) 2003-2007 Nihongoresources</line>
+			<line>http://www.nihongoresources.com</line>
+			<line>THIS FILE IS AT PRESENT STILL UNDER DEVELOPMENT AND SUBJECT TO CHANGE WITHOUT NOTICE</line>
+		</header>
+
+		<body>
+			<para>This document is not released under the creative commons or GPL license, but under the following license:</para>
+			<para><line>- You are not allowed to modify this document.</line>
+			<line>- Consequently, you are only allowed to redistribute this document in unmodified form.</line>
+			<line>- You may convert the data in this document to a different data format for either private or public polling.</line>
+			<line>- You may, however, not redistribute the data as converted format.</line>
+			<line>- When making parts of this data publically available, you will include this license text in some directly visible way (such as linking to a page
+			with this license text, or verbatim copying it. Hiding it in html sourcecode or something that is not directly obvious does not fall under
+			  "directly visible").</line></para>
+			<para>In this license, redistribution is not the same as letting people view excerps such as when the data is used for instance on a searchable website</para>
+			<para>You can always contact if you feel you need to break these agreements, so we can talk over the particulars.</para>
+		</body>
+	</license>
+
+	<notice>
+		<para><ruby><rb>始</rb><rt>はじ</rt></ruby>めに</para>
+
+		<para>Whenever you see "noun phrase" or "verb phrase", these are used as grammatical terms, meaning they entail single nouns and single verbs.
+		I tried to separate use (ie: how is the prefix/suffix/contraction used in a sentece) from description (ie: what does it actually do). Should you
+		notice an unnecessary overlap in an entry, please contact me so that this document can be updated.</para>
+
+		<para>Also, I use the term <ruby><rb>已然形</rb><rt>いぜんけい</rt></ruby> rather than <ruby><rb>仮定形</rb><rt>かていけい</rt></ruby>, mostly because
+		the first is the grammatical name, and the second the colloquial name for this　base. Since this dictionary concerns grammar, it would be odd to use 
+		仮定形 instead.</para>
+
+		<para>You will see a lot of words in brackets in the example phrases. I used this styling to indicate contextually implied words that are not to be found
+		in the Japanese sentence, but are required for a natural English translation. As always, personal pronouns are particularly fun: it doesn't matter
+		which is used. Wherever you see one used, you can replace it with any other personal pronoun that fits the used case.</para>
+		
+		<para>There will be entries which concern classical helper verbs. In these cases you will see a list of bases, such as for た: [たろ・×・た・た・たら・×]. This
+		list is organised in the same way as any other Japanese dictionary organises them: [未然形・連用形・終止形・連体形・已然形・命令形]. An × indicates there
+		is no such form.</para>
+		
+		<para>You will need a browser that properly supports CSS2 (firefox, opera, netscape, safari) in order to "enjoy" the raw XML file; IE7 still does not support
+		the rather important :before and :after pseudo-classes that this document uses for its field labels. If you are using IE for this document, please stop and
+		either install the css2 fixes plugin for it (I have only been told this exists, you'll have to find it yourself), or install another browser alongside IE and be that
+		bit more standards-adhering.</para>
+	</notice>
+
+
+	<!--
+		The following list contains entries yet to be added:
+		
+		- かぎり
+		- しだい
+		- だけあって?
+		- だけで?
+		- だけに?
+		- ばあい
+		- まま (まんま)
+		- わけ
+		
+	-->
+
+
+	<gyou kana="あ"/>
+	
+	<entry id="1">
+		<particle>い</particle>
+		<use>sentence ending</use>
+		<description>Used in highly assertive speech, often following sentence ending だ (plain copula), か (questioning) or わ (emphatic). Possibly regional.</description>
+		<see id="42">だ+い</see>
+		<see id="5">か+い</see>
+		<see id="134">わ+い</see>
+	</entry>
+
+	<entry id="139">
+		<particle>お</particle>
+		<literary>御</literary>
+		<use>noun prefix</use>
+		<description>Honorifix prefix. Used (predominantly) for native Japanese words or words that use Japanse readings for their kanji.</description>
+		<see id="140">ご</see>
+		<see id="141">み</see>
+		<example role="example">
+			<phrase lang="jp"><s><p>お</p><ruby><rb>天気</rb><rt>てんき</rt></ruby></s>がいいですね。</phrase>
+			<phrase lang="en">The weather is quite nice, isn't it?</phrase>
+			<explanation>The word "weather", 天気, has been made honorific, making the sentence as a whole softer.</explanation>
+		</example>
+	</entry>
+
+
+
+	<gyou kana="か"/>
+	
+	<entry id="2">
+		<particle>か</particle>
+		<use>連体形 suffix</use>
+		<description>This particle marks a statement as being a questioning statement. Note this leads to more roles than just acting as question mark at the end of sentences.</description>
+		<roles>
+			<role>question mark</role>
+			<role>logical "or"</role>
+			<role>dubitative</role>
+		</roles>
+		<example role="question mark">
+			<phrase lang="jp"> コンビニに<s><ruby><rb>行</rb><rt>い</rt></ruby>った<p>か</p></s>。</phrase>
+			<phrase lang="en">Did you go to the convenience store?</phrase>
+			<explanation>Without か, this phrase means "[I] went to the convenience store". The addition of か marks this as being in question instead.</explanation>
+		</example>
+		<example role="questioning">
+			<phrase lang="jp"><s>しよう<p>か</p></s>と<ruby><rb>思</rb><rt>おも</rt></ruby>った</phrase>
+			<phrase lang="en">I thought [about] whether I should do it.</phrase>
+			<explanation>Here the subphrase しよう is made a questioning statement, making the thought "shall [I] do?" rather than "[I] shall do". Like
+			in the previous example, the subphrase しよう is in question, which is then stated as someone's thought.</explanation>
+		</example>
+		<example role="natural or">
+			<phrase lang="jp"><s>コーヒーにします<p>か</p></s>、<s>お<ruby><rb>茶</rb><rt>ちゃ</rt></ruby>にします<p>か</p></s>。</phrase>
+			<phrase lang="en">Will you have coffee, or tea?</phrase>
+			<explanation>This is the "natural" interpretation of the choice operator "or", where two (or more) options are given,
+			and only one of these may be chosen. Note that while in English this is one sentence, in Japanese this is necessarily two
+			sentences in succession. Decomposed this sentence reads "will you have [coffee] or [tea]", with the parts in brackets being
+			individual choices.</explanation>
+		</example>
+		<example role="logical or">
+			<phrase lang="jp"><s>コーヒー<p>か</p>お<ruby><rb>茶</rb><rt>ちゃ</rt></ruby></s>にします<p>か</p>。</phrase>
+			<phrase lang="en">Will you have [some] coffee or tea?</phrase>
+			<explanation>We see two "roles" of か here: the first is the "logical" interpration of "or", the second is what we would use a question
+			mark for in English. Unlike the previous example the first か sets up a truth conditional, which is true if either coffee or tea or even both
+			will be chosen. Unlike the previous example, which asks about which choice someone will go for, this question asks for a yes/no question.
+			If answered yes, the speaker knows the listener will have any or all choices listed, and if no the speaker knows that none of the choices
+			work. Decomposed this sentence reads "will you have [coffee or tea]" with the part in brackets being one thing, not distinct choices as
+			such. </explanation>
+		</example>
+		<example role="generic interrogative answer">
+			<phrase lang="jp"><s>いつ<p>か</p></s><ruby><rb>出</rb><rt>で</rt></ruby>ます。</phrase>
+			<phrase lang="en">[It] will come out eventually.</phrase>
+			<explanation>Normally いつ is a Japanese interrogative meaning "when". When affixed with か, all Japanese interrogatives turn into generic
+			answers to these interrogatives: "when" becomes "some [unspecified] time", "where" becomes "some [unspecified] place", "what"
+			becomes "some [unspecified] thing" and so forth.</explanation>
+		</example>
+	</entry>
+
+	<entry id="3">
+		<particle>が</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Marks the subject of a verbal clause. In some cases this may lead to が also leading to a perceived contrast in a sentence.</description>
+		<contrast id="90">に</contrast>
+		<contrast id="135">を</contrast>
+		<example role="verb subject">
+			<phrase lang="jp"><s><ruby><rb>母</rb><rt>かあ</rt></ruby>さん<p>が</p></s><ruby><rb>呼</rb><rt>よ</rt></ruby>んでたよ。</phrase>
+			<phrase lang="en">Mother called you.</phrase>
+			<explanation>In this sentence "mother" is the subject of the verb "call". Given the verb's meaning, this implies she's the one
+			doing the calling, as what or who is called would be marked as direct object, which uses を in Japanese instead.</explanation>
+		</example>
+		<example role="verbal adjective subject">
+			<phrase lang="jp"><s>それ<p>が</p></s><ruby><rb>好</rb><rt>す</rt></ruby>きです。</phrase>
+			<phrase lang="en">I like that.</phrase>
+			<explanation>Since verbal adjectives do not have direct objects (adjectives only describe aspects of something, they do not
+			act upon somethings) the thing they apply to is marked a subject to it. In this case the Japanese adjective 好き attributes the
+			property of being-liked to the subject それ, "that". Note that "I" is completely implied and could just as well be any other
+			personal pronoun.</explanation>
+		</example>
+		<example role="weak contrast">
+			<phrase lang="jp"><s>そう<ruby><rb>言</rb><rt>い</rt></ruby>った<p>が</p></s>、<ruby><rb>間違</rb><rt>まちが</rt></ruby>ってた。</phrase>
+			<phrase lang="en">I said that (lit: thusly), but I was wrong.</phrase>
+			<explanation>Here there is a weak contrast between the two statements. The second part is only a contrast to what the first part
+			implies, rather than being a direct contrast. Essentially what we see here is that the entire phrase そう言った is the subject to the
+			verb "being wrong".</explanation>
+		</example>
+		<example role="a special case">
+			<phrase lang="jp"><s><ruby><rb>済</rb><rt>す</rt></ruby>みません<p>が</p></s>、<ruby><rb>通</rb><rt>とお</rt></ruby>してもらえませんか。</phrase>
+			<phrase lang="en">Excuse me, could [I have] you let me through?</phrase>
+			<explanation>For this example to make sense, it is required to know that すみません is not just an expression, but actually means something.
+			Used in situations where a debt-relation is created (no matter how minor), this expression notes that after the situation has been resolved
+			there will be a debt relation that prevails, rather than ending there and then (this debt by action has been at the basis of social interaction
+			in Japanese culture throughout its history). Knowing this, the が in this example marks the expression as a "soft" subject; the "letting of
+			someone through" is in this case fascilitated (though obviously not strictly speaking performed) by the expression. Usually example phrases
+			of the kind "すみませんが、... " are explained as having が act as something different from the subject marker, but this is not quite true, it is
+			merely a more subtle interpretation, made harder by the lack of such subtleties in English, which does not have explicit grammar markers but
+			has to divide up the grammar in terms of roles. This example then not only explains the use of が in it, but also highlights the problem in
+			explaining intrinsic differences between role-based and marker-based grammar explanation.</explanation>
+		</example>
+	</entry>
+
+	<entry id="5">
+		<particle>かい</particle>
+		<compound>か+い</compound>
+		<use>sentence ending</use>
+		<description>A compound of か and い.</description>
+		<see id="2">か</see>
+		<see id="1">い</see>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>行</rb><rt>い</rt></ruby>くの<p>かい</p></s>。</phrase>
+			<phrase lang="en">So: are you going?</phrase>
+			<explanation>The addition of い to the questioning particle か greatly emphasises the whole phrase. Without it, the Japanese would be better
+			translated as merely reading "are you going?".</explanation>
+		</example>
+	</entry>
+
+	<entry id="6">
+		<particle>かな</particle>
+		<compound>か+な</compound>
+		<use>sentence ending</use>
+		<description>A compound of か and な.</description>
+		<roles>
+			<role>dubitative</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp">これ、<s><ruby><rb>出来</rb><rt>でき</rt></ruby>る<p>かな</p></s>。</phrase>
+			<phrase lang="en">I wonder if we can do this.</phrase>
+			<explanation>Note that "do" here refers only to the physical act of doing, not to the expression "... can do ..." that in English implies questioning
+			whether social responsibility should be taken. The role of かな as dubitative comes from the combination of a questioning statement paired with な,
+			which marks a statement as being almost rhetoric in seeking agreement. The addition of な leads to the statement 出来るか, "can [we] do?" being
+			posed as an agreement seeking question "do you think we can do" without the explicit "do you" part. In English we write that as a self-posing
+			question "I wonder whether ...", but this is strictly speaking not what happens in Japanese. The Japanese question remains one that is asked
+			in a half-expecting-agreement fashion when there are listeners present (In the case that there is no one else present, this is a normal example
+			of someone talking to themselves).</explanation>
+		</example>
+	</entry>
+
+	<entry id="7">
+		<particle>がな</particle>
+		<compound>が+な</compound>
+		<use>sentence ending</use>		
+		<description>A compound of が and な, expresses a hopefulness.</description>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>前回</rb><rt>ぜんかい</rt></ruby><ruby><rb>来</rb><rt>こ</rt></ruby>なくて、<ruby><rb>今回</rb><rt>こんかい</rt></ruby>は<s>みんなが<ruby><rb>来</rb><rt>き</rt></ruby>たらいい<p>がな</p></s>。</phrase>
+			<phrase lang="en">Given the last time, it would be great if everyone showed up this time...</phrase>
+			<explanation>From the sentence it should be obvious that it is highly unlikely that the event "everyone will come" will indeed transpire. As such,
+			the addition of がな makes this more a hope than anything.</explanation>
+		</example>
+	</entry>
+
+	<entry id="8">
+		<particle>かなあ</particle>
+		<compound>か+なあ</compound>
+		<use>sentence ending</use>
+		<description>A compound of か and なあ.</description>
+		<roles>
+			<role>strong rhetorical statement</role>
+		</roles>
+		<see id="6">かな</see>
+	</entry>
+
+	<entry id="9">
+		<particle>がなあ</particle>
+		<compound>が+なあ</compound>
+		<use>sentence ending</use>
+		<description>A compound of が and なあ, expresses strong hopefulness</description>
+		<see id="7">がな</see>
+	</entry>
+
+	<entry id="10">
+		<particle>がてら</particle>
+		<use>noun/verb 連用形 suffix</use>
+		<description>Marks a "base" event during which a shorter event takes place.</description>
+		<roles>
+			<role>while</role>
+			<role>during</role>
+		</roles>
+		<contrast id="84">ながら</contrast>
+		<example role="incidental duration">
+			<phrase lang="jp"><s><ruby><rb>散歩</rb><rt>さんぽ</rt></ruby><p>がてら</p></s><ruby><rb>買</rb><rt>か</rt></ruby>い<ruby><rb>物</rb><rt>もの</rt></ruby>しました。</phrase>
+			<phrase lang="en">I did some shopping while taking a walk</phrase>
+			<explanation>In this example the act of doing shopping is (far) shorter than the act of talking a walk. When using がてら
+			the act to which it is affixed is always the longer "base" event. Usually you will hear the explanation that the shorter,
+			more specific event follows the longer base event, but of course - as always in Japanese - what the speaker considers the
+			most important comes last, so it is entirely possible to reverse the order provided we keep がてら affixed to the right thing:
+			買い物しました。散歩しがてら。 would be perfectly valid (if somewhat colloquial) Japanese.</explanation>
+		</example>
+	</entry>	
+
+	<entry id="11">
+		<particle>から</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Denotes point of origin ("start") in terms of time, space, or reasoning.</description>
+		<roles>
+			<role>from (time, space)</role>
+			<role>as of (time)</role>
+			<role>after doing (て form)</role>
+			<role>because (reasoning)</role>
+		</roles>
+		<example role="place">
+			<phrase lang="jp"><s><ruby><rb>奈良</rb><rt>なら</rt></ruby><p>から</p></s><ruby><rb>来</rb><rt>き</rt></ruby>ました。</phrase>
+			<phrase lang="en">We came from Nara.</phrase>
+			<explanation>Here the starting point is the city of 奈良 (located in the <ruby><rb>近畿</rb><rt>きんき</rt></ruby> prefecture).</explanation>
+		</example>
+		<example role="clock-specified time">
+			<phrase lang="jp"><s><ruby><rb>十時</rb><rt>じゅうじ</rt></ruby><p>から</p></s><ruby><rb>暇</rb><rt>ひま</rt></ruby>ですよ。</phrase>
+			<phrase lang="en">I'll be free as of 10 o' clock.</phrase>
+			<explanation>Here the point in time "10 o' clock" is given as the starting point as of when "being available" applies.</explanation>
+		</example>
+		<example role="event-specified time">
+			<phrase lang="jp"><s><ruby><rb>掃除</rb><rt>そうじ</rt></ruby>をして<p>から</p></s>ご<ruby><rb>飯</rb><rt>はん</rt></ruby>を<ruby><rb>作</rb><rt>つく</rt></ruby>ります。</phrase>
+			<phrase lang="en">I will made dinner after [I am done with] cleaning.</phrase>
+			<explanation>Here the starting point for "making dinner" is set to the undefined moment when the act of "cleaning" is done.
+			This uses the verb continuative て form rather than the past tense, as this indicates that the this act has not already been
+			performed. If we use the past tense instead, then because the act has already been performed then this cannot act as a future
+			moment in time, and will instead be interpreted as a reason, as in the following example.</explanation>
+		</example>
+		<example role="reason">
+			<phrase lang="jp">もう<s><ruby><rb>食</rb><rt>た</rt></ruby>べた<p>から</p></s><ruby><rb>別</rb><rt>べつ</rt></ruby>にお<ruby><rb>腹</rb><rt>なか</rt></ruby>は<ruby><rb>空</rb><rt>す</rt></ruby>いてません。</phrase>
+			<phrase lang="en">I already ate, so I'm not particularly hungry.</phrase>
+			<explanation>Here the statement "I already ate" is used as argument to back up "I am not particularly hungry".</explanation>
+		</example>
+	</entry>
+
+	<entry id="12">
+		<particle>からして</particle>
+		<compound>から+して</compound>
+		<use>noun phrase suffix</use>
+		<description>A compound of から and して (て form of する). Marks a basis for (a series of) comment(s).</description>
+		<roles>
+			<role>starting with</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>服</rb><rt>ふく</rt></ruby><p>からして</p></s>、<ruby><rb>彼</rb><rt>かれ</rt></ruby>は<ruby><rb>派手</rb><rt>はで</rt></ruby>な<ruby><rb>男</rb><rt>おとこ</rt></ruby>ですね。</phrase>
+			<phrase lang="en">[If we] start with his clothes, [it's clear] he's a pretty flashy guy.</phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="14">
+		<particle>かしら</particle>
+		<use>sentence ending</use>
+		<description>Effeminate particle, equivalent to かな.</description>
+		<roles>
+			<role>dubitative</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>安</rb><rt>やす</rt></ruby>くて<ruby><rb>買</rb><rt>か</rt></ruby>おう<p>かしら</p></s>。</phrase>
+			<phrase lang="en">It's [quite] expensive, I wonder if I should buy it.</phrase>
+			<explanation>This is the only truly effeminate particle in Japanese, used exclusively by women, transvestites,
+			and particularly feminine gay men.</explanation>
+		</example>
+	</entry>
+
+	<entry id="15">
+		<particle>かよ</particle>
+		<compound>か+よ</compound>
+		<use>sentence ending</use>
+		<description>A compound of か and よ.</description>
+		<roles>
+			<role>strong question mark</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>何</rb><rt>なん</rt></ruby>で<ruby><rb>連絡</rb><rt>れんらく</rt></ruby>しなかった<p>かよ</p></s>。</phrase>
+			<phrase lang="en">Why [the hell] didn't you contact me?</phrase>
+			<explanation>The combination of か and よ is an extreme case of stressing, which is reflected in the translation by the
+			English expletive "why the hell".</explanation>
+		</example>
+	</entry>
+
+	<entry id="16">
+		<particle>きり</particle>
+		<literary>切り</literary>
+		<literary>限り</literary>
+		<use>noun/verb phrase/case particle</use>
+		<description>Restricts a situation to only one case.</description>
+		<roles>
+			<role>only</role>
+			<role>merely</role>
+		</roles>
+		<contrast id="43">だけ</contrast>
+		<see id="17">ぎり</see>
+		<!-- change to 二人 -->
+		<example role="restiction of quantity">
+			<phrase lang="jp"><s><ruby><rb>一人</rb><rt>ひとり</rt></ruby><p>きり</p></s>でその<ruby><rb>仕事</rb><rt>しごと</rt></ruby>をしました。</phrase>
+			<phrase lang="en">I did that job on my own.</phrase>
+			<explanation>In this use きり is interchangable with だけ, with a nuance difference. The use of きり focusses on
+			the fact that only one person did the job (implying there was no one else around to do it), while using でけ focusses on the
+			fact that of a group of people only one person did the job.</explanation>
+		</example>
+		<!-- 祖父は大病を患ったため寝たきりになりました。 -->
+		<example role="restriction on action">
+			<phrase lang="jp">いすが<ruby><rb>少</rb><rt>すく</rt></ruby>なくて、<s><ruby><rb>立</rb><rt>た</rt></ruby>った<p>きり</p></s><ruby><rb>授業</rb><rt>じゅぎょう</rt></ruby>を<ruby><rb>受</rb><rt>う</rt></ruby>けた。</phrase>
+			<!-- change to まま -->
+			<phrase lang="en">There were few chairs, so I [sat] through [the entire] class standing.</phrase>
+			<explanation>Here the act of "sitting through class" (an unfortunate English expression, which is only marginally related to actual sitting) is restricted to the a case of only being able to do this standing.</explanation>
+		</example>		
+		<example role="restriction on negative action">
+			<phrase lang="jp">ドイツへ<s><ruby><rb>行</rb><rt>い</rt></ruby>った<p>きり</p></s><ruby><rb>帰</rb><rt>かえ</rt></ruby>って<ruby><rb>来</rb><rt>こ</rt></ruby>ない。</phrase>
+			<phrase lang="en">After going to Germany he hasn't come back home.</phrase>
+			<explanation>Here the action statement "he hasn't come home" has been restricted to applying only to the case of "having gone to Germany".
+			This pattern of きり plus a negative verb form is typically translatable as "after ... , ... ".</explanation>
+		</example>
+	</entry>
+
+	<entry id="17">
+		<particle>ぎり</particle>
+		<literary>切り</literary>
+		<use>noun/verb phrase/case particle</use>
+		<description>Voiced version of きり, used mostly in reprimands.</description>
+		<see id="16">きり</see>
+	</entry>
+
+	<entry id="18">
+		<particle>くせに</particle>
+		<literary>癖に</literary>
+		<compound>くせ+に</compound>
+		<use>noun+の/verb phrase suffix</use>
+		<description>A combination of "habit" and the affixing particle に. Used to indicate there is a norm from which is being deviated (negative connotation).</description>
+		<roles>
+			<role>even though</role>
+			<role>despite</role>
+		</roles>
+		<example role="noun phrase example">
+			<phrase lang="jp">ただの<s>ガキの<p>くせに</p></s><ruby><rb>偉</rb><rt>えら</rt></ruby>い<ruby><rb>事</rb><rt>こと</rt></ruby>も<ruby><rb>言</rb><rt>い</rt></ruby>えるんですね。</phrase>
+			<phrase lang="en">You're just a kid, but you can say some profound things [sometimes] don't you?</phrase>
+			<explanation>Normally, kids are not really expected to say profound, so this would definitely be a deviation from the norm.</explanation>
+		</example>
+		<example role="verb phrase example">
+			<phrase lang="jp">いつも<s><ruby><rb>叱</rb><rt>しか</rt></ruby>られる<p>くせに</p></s><ruby><rb>何</rb><rt>なん</rt></ruby>で<ruby><rb>褒</rb><rt>ほ</rt></ruby>めてるんですか。</phrase>
+			<phrase lang="en">I'm always being scolded by you, why are you praising me [all of a sudden]?</phrase>
+			<explanation>If the norm has been established as "being scolded all the time", then being praised is a clear deviation from this norm.</explanation>
+		</example>
+	</entry>
+
+	<entry id="19">
+		<particle>くらい</particle>
+		<literary>位</literary>
+		<use>extent suffix</use>
+		<description>Marks rough extent in duration or action.</description>
+		<contrast id="27">ごろ</contrast>
+		<see id="20">ぐらい</see>
+		<example role="rough extent of duration">
+			<phrase lang="jp"><ruby><rb>一日</rb><rt>いちにち</rt></ruby>に<s><ruby><rb>４時間</rb><rt>よじかん</rt></ruby><p>くらい</p></s><ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>します。</phrase>
+			<phrase lang="en">I study roughly four hours a day.</phrase>
+			<explanation>In this sentence the exact time statement ４時間, "four hours" is marked as rough estimate instead. Do not confuse
+			with with the suffix ごろ, which does almost the same for exact moments in time (clock time), rather than duration.</explanation>
+		</example>
+		<example role="rough extent of action">
+			<phrase lang="jp"><s>それ<p>くらい</p></s><ruby><rb>分</rb><rt>わ</rt></ruby>かっていますけど。</phrase>
+			<phrase lang="en">Well, that much I do understand...</phrase>
+			<explanation>In this example the word それ, contextually translatable as "that which was just said", is marked as the extend of the speaker's understood matter.</explanation>
+		</example>
+	</entry>
+
+
+	<entry id="20">
+		<particle>ぐらい</particle>
+		<literary>位</literary>
+		<use>durational time suffix</use>
+		<description>Voiced version of くらい.</description>
+		<see id="19">くらい</see>
+	</entry>
+
+	<entry id="21">
+		<particle>けど</particle>
+		<compound>け+ど</compound>
+		<use>verb phrase suffix</use>
+		<description>Equivalent to けども, using the concessive particle ど instead of ども.</description>
+		<see id="23">けども</see>
+		<see id="24">けれども</see>
+	</entry>
+
+	<entry id="22">
+		<particle>けども</particle>
+		<compound>け+ども</compound>
+		<use>verb phrase suffix</use>
+		<description>Equivalent to けれども, formed out of the 已然形 of the classical verb き (which looks at the past) and classical 
+		concessive particle ども.</description>
+		<see id="24">けれども</see>
+	</entry>
+
+	<entry id="23">
+		<particle>けれど</particle>
+		<compound>けれ+ど</compound>
+		<use>verb phrase suffix</use>
+		<description>Equivalent to けれども, using the concessive particle ど instead of ども.</description>
+		<see id="24">けれども</see>
+	</entry>
+
+	<entry id="24">
+		<particle>けれども</particle>
+		<compound>けれ+ども</compound>
+		<use>verb phrase suffix</use>
+		<description>Contrastive conjunctive. Can be used in the forms けれども, けども, けれも and けど (following the old adage "the
+		longer, the more formal"). This compound comes from the classical verb けり (which takes the present and looks back at it as
+		past) in 已然形 suffixed with the classical compound particle ども (a concessive conjunction). From this combination the
+		meaning of けれども is fairly immediate. This particle can be used either as conjunctive or interjection.</description>
+		<roles>
+			<role>however</role>
+		</roles>
+		<example role="interjection">
+			<phrase lang="jp"><s>ジャズもいいと<ruby><rb>思</rb><rt>おも</rt></ruby>う<p>けど</p></s>。</phrase>
+			<phrase lang="en">I think jazz [music] is good too, though.</phrase>
+			<explanation>This is an example of the interjection use, where it serves as a comment following up something said earlier,
+			such as "I really love rock music".</explanation>
+		</example>
+		<example role="conjunctive">
+		
+			<phrase lang="jp"><s><ruby><rb>頑固</rb><rt>がんこ</rt></ruby>なやつだ<p>けれど</p></s>、<ruby><rb>弟</rb><rt>おとうと</rt></ruby>ですからかわいくて<ruby><rb>当然</rb><rt>とうぜん</rt></ruby>でしょう。</phrase>
+			<phrase lang="en">He's a stubborn guy, but he's [also] my brother, so obviously I love him.</phrase>
+			<explanation>In this example we see a normal contrast similar to the English "even though" or "despite".</explanation>
+		</example>
+	</entry>
+
+	<entry id="140">
+		<particle>ご</particle>
+		<literary>御</literary>
+		<use>noun prefix</use>
+		<description>Honorifix prefix. Used (predominantly) for words that have been derived from Chinese or use Chinese readings for their kanji.</description>
+		<see id="139">お</see>
+		<see id="141">み</see>
+		<example role="example">
+			<phrase lang="jp"><s><p>ご</p><ruby><rb>立派</rb><rt>りっぱ</rt></ruby></s>な女になられました。</phrase>
+			<phrase lang="en">[She] has become a fine woman.</phrase>
+			<explanation>The noun adjective 立派 is read using the chinese readings of its kanji, and gets ご rather than お as reading for the honorific prefix.
+			(The なられる in this sentence is the honorific form of なる)</explanation>
+		</example>
+	</entry>
+
+	<entry id="25">
+		<particle>こそ</particle>
+		<use>noun suffix</use>		
+		<description>Places emphasis on, or moves emphasis from something to, the preceding clause.</description>
+		<example role="shifting emphasis">
+			<phrase lang="jp">A:　あっ、すみません。</phrase>
+			<phrase lang="en">Oh dear, excuse me.</phrase>
+			<phrase lang="jp">B:　いいえいいえ、<s>こちら<p>こそ</p></s>どうもすみません。</phrase>
+			<phrase lang="en">No, no, excuse *me*.</phrase>
+			<explanation>This is an two phrase conversation in which こそ shifts emphasis away from speak A being to blame for
+			whatever he or she is apologising for, to speaker B instead. You might hear this short "conversation" after two
+			people bump into each other on the street when both weren't really looking where they were going.</explanation>
+		</example>
+		<example role="stress">
+			<phrase lang="jp"><s><ruby><rb>今度</rb><rt>こんど</rt></ruby><p>こそ</p></s><ruby><rb>勝</rb><rt>か</rt></ruby>つわ。</phrase>
+			<phrase lang="en">*This* time we're going to win.</phrase>
+			<explanation>In this example こそ places emphatic stress of a level that is similar to adding explicit the contrast "unlike the
+			previous times, this time we're going to win".</explanation>
+		</example>
+		<example role="stressing reason">
+			<phrase lang="jp"><s>だから<p>こそ</p></s>しなければならない。</phrase>
+			<phrase lang="en">[But] *that* is exactly why we should do it.</phrase>
+			<explanation>In this sentence こそ places emphatic stress on the preceding reason(s), referred to by だから.</explanation>
+		</example>
+	</entry>
+
+	<entry id="26">
+		<particle>こと</particle>
+		<literary>事</literary>
+		<use>noun+の/verb phrase suffix</use>
+		<description>One of the two main divisions in Japanese, こと represents the "abstract" things as opposed to the "real" things (=もの).
+		Follows verbal 連体形 or genitively linked to nouns, turning them into abstract concepts rather than the mundane thing they directly
+		reference otherwise.</description>
+		<contrast id="119">もの</contrast>
+		<example role="noun phrase example">
+			<phrase lang="jp"><s><ruby><rb>彼</rb><rt>かれ</rt></ruby>の<p>事</p></s>が<ruby><rb>嫌</rb><rt>きら</rt></ruby>いだよ。</phrase>
+			<phrase lang="en">I [really] don't like him.</phrase>
+			<explanation>While translating the same as 彼が嫌いだ, the use of こと carries the consequences to an abstract level. Rather than
+			disliking someone directly, in this example the speaker dislikes the person as he/she sees him. This is an important difference, as
+			the way someone is seen need not reflect them in any significant way - something which goes for everything in life; the way you
+			think about things need not reflect the way things truly are, and as such when forming opinions and the like, it sometimes helps
+			to explicitly say you're talking about what you think, rather than assuming what you think is the way things really are.</explanation>
+		</example>
+		<example role="verb phrase example">
+			<phrase lang="jp">お<ruby><rb>箸</rb><rt>はし</rt></ruby>を<s><ruby><rb>使</rb><rt>つか</rt></ruby>う<p>こと</p></s>は<ruby><rb>欧米人</rb><rt>おうべいじん</rt></ruby>などに<ruby><rb>変</rb><rt>へん</rt></ruby>に<ruby><rb>見</rb><rt>み</rt></ruby>える。</phrase>
+			<phrase lang="en">Westerners [tend to] find the notion of using chopsticks [for eating] [quite] strange.</phrase>
+			<explanation>In this example こと turns the physical act of "using chopsticks" into an abstract notion, This notion is then said to
+			be what Westerners find odd, rather than finding the act of someone using chopsticks when they come with a meal odd.</explanation>
+		</example>
+		<example role="experience">
+			<phrase lang="jp"><ruby><rb>日本</rb><rt>にほん</rt></ruby>にしか<s><ruby><rb>行</rb><rt>い</rt></ruby>った<p><ruby><rb>事</rb><rt>こと</rt></ruby></p></s>がありません。</phrase>
+			<phrase lang="en">I've never been to anywhere but Japan.</phrase>
+			<explanation>This example shows the use of こと in combination with a verb past tense, to turn 行った, "having gone to", into
+			a noun construction 行ったこと meaning "the having gone to [somewhere by someone]". In effect, it has turned the physical
+			event of having gone someone where to the abstract idea of going somewhere. This abstract idea is then commented on
+			using ある, which says whether or not this notion applies to the speaker. In this case it does not: the going of some place
+			other than Japan does not apply to this speaker. This interplay of verb past tense with こと and ある is used when describing
+			whether or not someone has had experience with something.</explanation>
+		</example>
+	</entry>
+
+	<entry id="27">
+		<particle>ごろ</particle>
+		<literary>頃</literary>
+		<use>time/verb連用形 suffix</use>
+		<description>Marks rough moment in time. Do not confuse with くらい/ぐらい.</description>
+		<roles>
+			<role>around</role>
+		</roles>
+		<contrast id="19">くらい</contrast>
+		<contrast id="20">ぐらい</contrast>
+		<example role="clock time example">
+			<phrase lang="jp"><s><ruby><rb>三時</rb><rt>さんじ</rt></ruby><p>ごろ</p></s><ruby><rb>会</rb><rt>あ</rt></ruby>おうか。</phrase>
+			<phrase lang="en">Shall we meet up around 3?</phrase>
+			<explanation>In this example ごろ turns the exact clock time 3 o' clock into a rough clock time instead.</explanation>
+		</example>
+<!--		
+		<example role="event time example">
+			<phrase lang="jp"><s><ruby><rb>終</rb><rt>お</rt></ruby>わり<p><ruby><rb>頃</rb><rt>ごろ</rt></ruby></p></s>になった。</phrase>
+			<phrase lang="en">We've roughly come to the end [of some unspecified event].</phrase>
+			<explanation>Here ごろ is added to the 連用形 of 終わる, "end", to turn the exact moment of ending into a rough moment instead.</explanation>
+		</example>
+-->		
+	</entry>
+
+
+
+	<gyou kana="さ"/>
+	
+	<entry id="28">
+		<particle>さ</particle>
+		<use>mid-sentence/sentence ending emphatic</use>
+		<description>This particle is used to mphasise bits of information as well as rhetorically confirm that a listener is still following the speaker.</description>
+		<see id="146">ですね</see>
+		<see id="146">ね</see>
+		<see id="146">な</see>
+		<example role="example">
+			<phrase lang="jp"><s>それで<p>さ</p></s>、<ruby><rb>妹</rb><rt>いもうと</rt></ruby>はな、<ruby><rb>俺</rb><rt>おれ</rt></ruby>の<ruby><rb>分</rb><rt>ぶん</rt></ruby>まで<ruby><rb>食</rb><rt>く</rt></ruby>ってしまったよ。</phrase>
+			<phrase lang="en">So then, my sister [you know, who I was talking about,] even ate my portion as well.</phrase>
+			<explanation>In this sentence, there are actually three emphatic markers: さ, な and よ, of which the first two fulfil a similar role of
+			grabbing the attention of the listener and making sure they're still following the conversation. This is similar to how ですね can
+			be used as well.</explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp">それなら、<s>ある<p>さ</p></s>。</phrase>
+			<phrase lang="en">Oh, well, that we have.</phrase>
+			<explanation>As a sentence ender, さ acts almost as a condescending marker, in this case by implying that someone's assumption
+			about a certain product not being available is simply wrong. Without the さ, this phrase would just be translated as "We have that",
+			but the さ at the end makes this phrase much more of a correction than just a remark.</explanation>
+		</example>
+	</entry>
+
+	<entry id="29">
+		<particle>さえ</particle>
+		<use>noun phrase suffix</use>
+		<description>Used to mark a noun phrase as an extreme or severe case.</description>
+		<roles>
+			<role>even</role>
+			<role>only</role>
+		</roles>
+		<see id="60">でさえ</see>
+		<see id="37">すら</see>
+		<see id="147">だに</see>
+		<example role="singular condition">
+			<phrase lang="jp"><s><ruby><rb>金</rb><rt>かね</rt></ruby><p>さえ</p></s>あれば<ruby><rb>問題</rb><rt>もんだい</rt></ruby>ない。</phrase>
+			<phrase lang="en">As long as we've got money, there won't be any [real] problems.</phrase>
+			<explanation>In this example さえ marks money as being the only requirement to fulfill the situation "問題ない". In this use さえ can
+			often be translated as "as long as", "if only ...".</explanation>
+		</example>
+		<!-- CHANGE THIS EXAMPLE 
+		<example role="compounding situation">
+			<phrase lang="jp"><ruby><rb>窓</rb><rt>まど</rt></ruby>が<ruby><rb>壊</rb><rt>こわ</rt></ruby>しては<s>ひどい<ruby><rb>雨</rb><rt>あめ</rt></ruby><p>さえ</p></s>が<ruby><rb>振</rb><rt>ふ</rt></ruby>ってきた。</phrase>
+			<phrase lang="en">On top of the window being broken, it started raining terribly.</phrase>
+			<explanation>Here we see the bad situation of the window being broken being compounded by it starting to rain heavily. In this use
+			さえ can often be translated as "furthermore", "on top of that" or "in addition to".</explanation>
+		</example>
+		-->
+	</entry>
+
+	<entry id="30">
+		<particle>し</particle>
+		<use>verb phrase suffix</use>
+		<description>Used with 連体形 statements as a conjunctive either leading up to or explaining some conclusion or assumption</description>
+		<roles>
+			<role>and</role>
+			<role>also</role>
+			<role>plus</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>結局</rb><rt>けっきょく</rt></ruby><ruby><rb>必要</rb><rt>ひつよう</rt></ruby>もなくて<ruby><rb>買</rb><rt>か</rt></ruby>わなかった。<s><ruby><rb>高</rb><rt>たか</rt></ruby>かった<p>し</p></s>。</phrase>
+			<phrase lang="en">In the end I didn't really need it, so didn't buy it. [Plus,] it was expensive anyway.</phrase>
+			<explanation>The second bit is used as additional argument to explain the act of not buying a particular item.</explanation>
+		</example>
+	</entry>
+
+	<entry id="31">
+		<particle>しか</particle>
+		<literary>然</literary>
+		<use>noun/verb phrase suffix</use>
+		<description>Used in the pattern [X]しか[Y] with Y being a negative verb, this particle marks the extent of the act Y as X.</description>
+		<roles>
+			<role>save</role>
+			<role>except for</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>青空</rb><rt>あおぞら</rt></ruby><p>しか</p></s><ruby><rb>見</rb><rt>み</rt></ruby>えない。</phrase>
+			<phrase lang="en">I see nothing but blue skies</phrase>
+			<explanation>This is a fairly self-evident example, where しか quite literally maps to "nothing but".</explanation>
+		</example>
+	</entry>
+
+	<entry id="32">
+		<particle>しかし</particle>
+		<literary>然し</literary>
+		<compound>しか+し</compound>
+		<use>sentence starting interjection</use>
+		<description>A compound of しか and the 連用形 of する. Works as contrasting interjection.</description>
+		<roles>
+			<role>however</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp">やっと<ruby><rb>準備</rb><rt>じゅんび</rt></ruby>はできた。<p>しかし</p>、<s><ruby><rb>君</rb><rt>きみ</rt></ruby>も<ruby><rb>来</rb><rt>く</rt></ruby>るなんて<ruby><rb>思</rb><rt>おも</rt></ruby>わなかったな</s>。</phrase>
+			<phrase lang="en">[Well,] we're finally ready. Still, I didn't hadn't expected you to [want to] come along too.</phrase>
+			<explanation>In this example the contrast is not so much between the content of the two phrases, but between the situation and an expectancy.
+			Typically when you are contrasting the literal information in two sentences using が or け(れ)ど(も) will be more "natural", as there is no need
+			to use two separate sentences to contrast literal information. However, in this case there is a clear need to start a second sentence as the information
+			in it is not directly related to the first sentence at all.</explanation>
+		</example>
+	</entry>
+
+	<entry id="33">
+		<particle>じゃ</particle>
+		<compound>で+は</compound>
+		<use>Contraction</use>
+		<description>Compound contraction of で and は.</description>
+		<see id="62">では</see>
+		<example role="in an inflection">
+			<phrase lang="jp">先生<p>じゃ</p>ありません。</phrase>
+			<phrase lang="en">[I] am not a teacher.</phrase>
+			<explanation>In this example ではありません has been contracted to form じゃありません instead. Because of the ます form for ある this is still considered polite speech.</explanation>
+		</example>
+		<example role="in colloquial language">
+			<phrase lang="jp">それ<p>じゃ</p>、またね。</phrase>
+			<phrase lang="en">Well then, see you later.</phrase>
+			<explanation>A somewhat expressive example, here the formal それでは has been replaced with the far less form それじゃ.</explanation>
+		</example>
+	</entry>
+
+	<entry id="34">
+		<particle>じゃない</particle>
+		<compound>で+は+ない</compound>
+		<use>noun phrase suffix</use>
+		<description>The plain negative copula, not to be confused with the rhetorically questioning じゃない.</description>
+		<contrast id="35">じゃない</contrast>
+		<example role="example">
+			<phrase lang="jp">この<ruby><rb>本</rb><rt>ほん</rt></ruby>は<s><ruby><rb>辞典</rb><rt>じてん</rt></ruby><p>じゃない</p></s>よ。</phrase>
+			<phrase lang="en">This book is not a dictionary [in case you thought it was].</phrase>
+			<explanation>This example is fairly self-evident.</explanation>
+		</example>
+	</entry>
+
+	<entry id="35">
+		<particle>じゃない</particle>
+		<compound>で+は+ない</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>Hopeful rhetorical, used to verify that something is the case by asking whether the negative is the case. In this use it acts as a particle rather than verbal
+		conjugation, and as such can follow verbal adjectives in 連体形. Do not confuse this use for improper negative inflection of verbals adjectives.</description>
+		<contrast id="34">じゃない</contrast>
+		<example role="normal example">
+			<phrase lang="jp">その<ruby><rb>本</rb><rt>ほん</rt></ruby>は<s><ruby><rb>辞典</rb><rt>じてん</rt></ruby><p>じゃない</p></s>？</phrase>
+			<phrase lang="en">[Say,] isn't that book a dictionary?</phrase>
+			<explanation>The questioning tone makes all the difference here, without it this phrase would say "that book is not a dictionary", using the normal
+			interpretation of じゃない.</explanation>
+		</example>
+		<example role="verbal adjective example">
+			<phrase lang="jp"><s><ruby><rb>高</rb><rt>たか</rt></ruby>いん<p>じゃない</p></s>、<ruby><rb>五万円</rb><rt>ごまんえん</rt></ruby>何て……</phrase>
+			<phrase lang="en">Isn't it a bit steep, at 50,000 yen...?</phrase>
+			<explanation>While normally verbal adjectives cannot possible inflect like nouns, relying on the copula, in this use we're not actually dealing
+			with an inflection but with a "particle"; the speaker is somewhat hopeful rhetorically asking whether or not something isn't too expensive.</explanation>
+		</example>
+	</entry>
+
+	<entry id="36">
+		<particle>ずつ</particle>
+		<use>counting suffix</use>
+		<description>Marks things over which an equal distribution of (countable) items is applied.</description>
+		<roles>
+			<role>per</role>
+		</roles>
+		<!-- USE DIFFERENT EXAMPLE
+		<example role="numerical even distribution">
+			<phrase lang="jp">そのメロンは<s>一つ<p>ずつ</p><ruby><rb>五千円</rb><rt>ごせんえん</rt></ruby></s>です。</phrase>
+			<phrase lang="en">Those melons are 5000 yen each.</phrase>
+			<explanation>Here the equal distribution concerns price, each single melon being priced at 5000 yen (yes, high quality melons are really ridiculously expensive in Japan).</explanation>
+		</example>
+		 -->
+		<example role="conceptual even distribution">
+			<phrase lang="jp"><s><ruby><rb>少</rb><rt>すこ</rt></ruby>し<p>ずつ</p><ruby><rb>進</rb><rt>すす</rt></ruby>んでいます</s>。</phrase>
+			<phrase lang="en">I'm progressing [at something] bit by bit.</phrase>
+			<explanation>Here the equal distribution is of the action 進む per "bit".</explanation>
+		</example>
+	</entry>
+
+	<entry id="37">
+		<particle>すら</particle>
+		<use>noun phrase suffix</use>
+		<description>Used to mark a noun phrase as an extreme or severe case.</description>
+		<roles>
+			<role>(not) even</role>
+		</roles>
+		<see id="29">さえ</see>
+		<see id="60">でさえ</see>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>友達</rb><rt>ともだち</rt></ruby>に<p>すら</p></s><ruby><rb>話</rb><rt>はな</rt></ruby>していないことです。</phrase>
+			<phrase lang="en">It was something he had not even talked to his friends about.</phrase>
+			<explanation>The phrase 友達に話していないことです would mean "it was something he had not talked to his friends about", but the addition
+			of すら (after に, preserving the chunk "to friends") marks the "to friends" bit as an extreme case for this particular type of
+			action, leading to the translation given.</explanation>
+		</example>
+	</entry>
+
+
+	<entry id="38">
+		<particle>ぜ</particle>
+		<use>sentence ending</use>
+		<description>Used in informal assertive language as emphatic marker, used when talking to equals or people of lower social status.</description>
+		<see id="39">ぞ</see>
+		<see id="130">よ</see>
+		<example role="example">
+			<phrase lang="jp"><s>つまらない<ruby><rb>趣味</rb><rt>しゅみ</rt></ruby>だ<p>ぜ</p></s>。</phrase>
+			<phrase lang="en">Well, that's a boring hobby.</phrase>
+			<explanation>The "well" effectively comes from ぜ, which stresses the phrase つまらない趣味だ as subjectively informing someone.</explanation>
+		</example>
+	</entry>
+
+	<entry id="39">
+		<particle>ぞ</particle>
+		<use>sentence ending</use>
+		<description>Used in informal assertive language as emphatic marker, used when talking to equals or people of lower social status</description>
+		<see id="38">ぜ</see>
+		<see id="130">よ</see>
+		<example role="example">
+			<phrase lang="jp"><s>つまらない<ruby><rb>趣味</rb><rt>しゅみ</rt></ruby>だ<p>ぞ</p></s>。</phrase>
+			<phrase lang="en">[In case you didn't know,] it's [just] a boring hobby.</phrase>
+			<explanation>In this sentence ぞ stresses that something is mostly objective information. Contrast this to ぜ, which "feels" much more like subjective information.</explanation>
+		</example>
+	</entry>
+
+
+
+	<gyou kana="た"/>
+
+	<entry id="13">
+		<particle>た</particle>
+		<use>Follows verb 連用形</use>
+		<description>Classical helper verb for plain past tense [たろ・×・た・た・たら・×]. Contracts with 五段 verb 連用形: ～き+た → ～いた, ～ぎ+た → ～いだ, ～し+た → ～した, ～に+た → ～んだ,
+		～び+た → ～んだ, ～み+た → ～んだ, ～い+た → ～った, ～ち+た → ～った, ～り+た → ～った. The plain past tense is created in the same way for all verbs, following the 連用形 and in the
+		case of 五段 verbs contracting in the abovementioned way. There are no exceptions to this rule, as even the two "irregular" verbs are regular in this respect, due to their irregularity
+		being mostly in their bases (する → した, 来る → きた).</description>
+	</entry>
+
+	<entry id="40">
+		<particle>だ</particle>
+		<use>noun phrase suffix</use>
+		<description>Plain copula, derived from にてあり, through である, where であ has become だ. This verb has some very curious bases: [だろ・だつ(で)・だ・(な)・なら・×]. As is evident from the bases, だ may change
+		to な, but may also be replaced by の in some instances, or may even be omitted entirely in certain patterns.</description>
+		<roles>
+			<role>is</role>
+		</roles>
+		<see id="65">です</see>
+		<see id="78">な</see>
+		<see id="97">の</see>
+	</entry>
+
+	<entry id="41">
+		<particle>たい</particle>
+		<use>Follows verb 連用形</use>
+		<description>First person desirative adjective (I want...), does not contract with 五段 verb 連用形.</description>
+		<contrast id="149">たがる</contrast>
+		<example role="standard use">
+			<phrase lang="jp">その<ruby><rb>新</rb><rt>あたら</rt></ruby>しいゲームを<s>やってみ<p>たい</p></s>。</phrase>
+			<phrase lang="en">I want to try that new game.</phrase>
+			<explanation>This use of たい is considered about as subtle as a child saying "I want it, I want it, I want it" - it's egocentrical, to the point, and generally everything
+			you shouldn't be when in unknown company.</explanation>
+		</example>
+		<example role="polite use">
+			<phrase lang="jp"><ruby><rb>遊園地</rb><rt>ゆうえんち</rt></ruby>に<s><ruby><rb>行</rb><rt>い</rt></ruby>き<p>たい</p></s>ですけど……</phrase>
+			<phrase lang="en"></phrase>
+			<explanation>As たい is an adjective, it can be made polite by adding the polite copula です (in some inflection). The けど acts as softening the expression further
+			by hinting that the speaker would follow up with a statement that connotes "but only if this does not inconvenience anyone".</explanation>
+		</example>
+		<example role="deferred polite use">
+			<phrase lang="jp"><ruby><rb>休</rb><rt>やす</rt></ruby>みはカナダに<s><ruby><rb>行</rb><rt>い</rt></ruby>き<p>たい</p></s>と<ruby><rb>思</rb><rt>おも</rt></ruby>います。</phrase>
+			<phrase lang="en">I think I'd like to go to Canada for my vacation.</phrase>
+			<explanation>To addition of と思う changes the meaning from "I want" to "I think I'd like", smoothing out the directness and making the expression quite
+			suitable for general use.</explanation>
+		</example>
+	</entry>
+
+	<entry id="42">
+		<particle>だい</particle>
+		<compound>だ+い</compound>
+		<use>sentence ending</use>		
+		<description>A compound of だ and い.</description>
+		<see id="40">だ</see>
+		<see id="1">い</see>
+		<example role="example">
+			<phrase lang="jp">で、<s><ruby><rb>何</rb><rt>なん</rt></ruby><p>だい</p></s>？</phrase>
+			<phrase lang="en">So, what do you want?</phrase>
+			<explanation>As い is an interrogative, this entire phrase is essentially a question with the explicit addition of か to mark it as such.</explanation>
+		</example>
+	</entry>
+
+	<entry id="149">
+		<particle>たがる</particle>
+		<compound>た+がる</compound>
+		<use>Follows verb 連用形</use>
+		<description>A compound of た (from たい) and the verb がる, meaning "seem to". Second/third person desirative adjective (I want...), does not contract with 五段 verb 連用形.</description>
+		<contrast id="41">たい</contrast>
+		<example role="example">
+			<phrase lang="jp">その<ruby><rb>新</rb><rt>あたら</rt></ruby>しいゲームを<s>やり<p>たがる</p></s>んです。</phrase>
+			<phrase lang="en">It seems like he wants try that new game.</phrase>
+			<explanation>This form only works as second or third person desirative, and so cannot mean "I want to try that new game".</explanation>
+		</example>
+	</entry>
+
+
+	<entry id="43">
+		<particle>だけ</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Represents a limit of action or quantity. Not as strict as きり.</description>
+		<roles>
+			<role>only</role>
+			<role>just</role>
+		</roles>
+		<contrast id="16">きり</contrast>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>一人</rb><rt>ひとり</rt></ruby><p>だけ</p></s>でしました。</phrase>
+			<phrase lang="en">I did [it] on my own.</phrase>
+			<explanation>Because だけ rather than きり is used, we can assume that there were more people available to do this particular task,
+			but that rather than doing it with several people, only one person ("me") performed it.</explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>出来</rb><rt>でき</rt></ruby>る<p>だけ</p></s><ruby><rb>早</rb><rt>はや</rt></ruby>く<ruby><rb>来</rb><rt>き</rt></ruby>て<ruby><rb>下</rb><rt>くだ</rt></ruby>さい。</phrase>
+			<phrase lang="en">Please come as quick as you can.</phrase>
+			<explanation>In this example the limit of "coming" is set to be whatever this person can muster. As an aside, this particular combination of 出来る and だけ can
+			be confused with なるべく, which differs in meaning because of the words it's composed of. 出来る paired with だけ means "to the extent that you can", while なる
+			paired with べく means "at your earliest convenience" ("the moment that it becomes a possibility").</explanation>
+		</example>
+	</entry>
+
+	<entry id="45">
+		<particle>たって</particle>
+		<use>Alternative form</use>
+		<description>Emphatic alternative to verb ても form. Note that for 五段 verbs the same contraction rules apply as for the normal て form.</description>
+	</entry>
+
+	<entry id="46">
+		<particle>だって</particle>
+		<use>Alternative form</use>
+		<description>Emphatic alternative to でも (て form of です + も), as well as for the verb て form of -ぐ 五段 verbs.</description>
+	</entry>
+
+	<entry id="147">
+		<particle>だに</particle>
+		<use>outdated</use>
+		<description>Similar to そえ and すら.</description>
+		<see id="29">さえ</see>
+		<see id="37">すら</see>
+	</entry>
+	
+	<entry id="47">
+		<particle>だの</particle>
+		<compound>だ+の</compound>
+		<use>noun phrase listing</use>
+		<description>Used for successive listing.</description>
+		<roles>
+			<role>things like:</role>
+		</roles>
+		<contrast id="67">とか</contrast>
+		<contrast id="85">など</contrast>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>犬</rb><rt>いぬ</rt></ruby><p>だの</p></s><s><ruby><rb>猫</rb><rt>ねこ</rt></ruby><p>だの</p></s>、いろんなものを<ruby><rb>飼</rb><rt>か</rt></ruby>っている</phrase>
+			<phrase lang="en">Dogs, cats, we have all sorts of pets.</phrase>
+			<explanation>Unlike とか and など, だの is a precise lister, and does not imply anything more than is listed.</explanation>
+		</example>
+	</entry>
+
+	<entry id="48">
+		<particle>たら</particle>
+		<use>Follows verb 連用形</use>
+		<description>已然形 of the past tense helper verb た. Past hypothetical verb form, used to talk about potential future action as if they already happened.
+		Often used as conditional. Contracts with 五段 verbs in the same way as past tense た.</description>
+		<roles>
+			<role>should</role>
+			<role>in case</role>
+		</roles>
+		<see id="13">た</see>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>先生</rb><rt>せんせい</rt></ruby>に<s>聞い<p>たら</p></s>どうですか。</phrase>
+			<phrase lang="en">What if you asked the teacher?</phrase>
+			<explanation>While translated as a normal conditional, what actually happens is that the situation 先生に聞いた is sketches as already having happened. In
+			effect this form presents a hypothetical past about which comments can be made.</explanation>
+		</example>
+	</entry>
+
+	<entry id="51">
+		<particle>たり</particle>
+		<use>Follows verb 連用形</use>
+		<description>Derived from て+あり [たら・たり・たり・たる・たれ・たれ]. Used in combination with the verb する to representationally lists verb actions in the pattern
+		[X]たり([Y]たり[Z]たり...)する. Unlike the verb て form, but like a regular 連用形, there is no sequence implied by this suffix. Contracts with 五段 verbs in the same
+		way as past tense た or continuative て form.</description>
+		<roles>
+			<role>do such things as</role>
+		</roles>
+		<contrast id="55">て</contrast>
+		<see id="13">た</see>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>週末</rb><rt>しゅうまつ</rt></ruby>は<s><ruby><rb>読書</rb><rt>どくしょ</rt></ruby>し<p>たり</p>しました</s>。</phrase>
+			<phrase lang="en">I spent the weekend doing stuff like reading.</phrase>
+			<explanation>Regardless of whether it's used once or as a lister, ～たり has to be followd by an inflection of する for it to make sense.</explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>子猫達</rb><rt>こねこたち</rt></ruby>が<s><ruby><rb>寝</rb><rt>ね</rt></ruby><p>たり</p><ruby><rb>遊</rb><rt>あそ</rt></ruby>ん<p>だり</p>して</s><ruby><rb>可愛</rb><rt>かわい</rt></ruby>いですね。</phrase>
+			<phrase lang="en">Don't you think kittens are cute, how they sleep and play?</phrase>
+			<explanation>Here multiple たり clauses are used to create a list of actions that are performed by the kittens, though not necessarily in the order listed,
+			and not necessarily at the moment that this phrase is used.</explanation>
+		</example>
+	</entry>
+
+	<entry id="52">
+		<particle>ちゃ</particle>
+		<compound>て+は</compound>
+		<use>Contraction</use>
+		<description>Compound contraction of て and は.</description>
+		<see id="61">ては</see>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>仕事</rb><rt>しごと</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>かなく<p>ちゃ</p>。</phrase>
+			<phrase lang="en">I [really] have to head for work.</phrase>
+			<explanation>The contraction here also serves as cut-off point for a trailing sentence, the full sentence would be 仕事に行かなくてはいけません (or variation
+			on the double negative pattern for mandatory action).</explanation>
+		</example>
+	</entry>
+
+	<entry id="148">
+		<particle>っ</particle>
+		<use>phrase suffix</use>
+		<description>Glottal stop, added to words to signify the speaker is either cut off, or somehow feels it necessary to add the sense that the word is cut off.</description>
+	</entry>
+
+	<entry id="145">
+		<particle>っきり</particle>
+		<use>noun/verb phrase/case particle</use>
+		<description>Emphatic form of きり.</description>
+		<see id="16">きり</see>
+	</entry>
+
+	<entry id="53">
+		<particle>っけ</particle>
+		<use>sentence ending</use>
+		<description>This particle is used as question recollective.</description>
+		<roles>
+			<role>as I recall</role>
+			<role>[what] is ... again</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><ruby><rb>電話番号</rb><rt>でんわばんごう</rt></ruby>は<s>何だ<p>っけ</p></s>。</phrase>
+			<phrase lang="en">Now what was that phone number again...</phrase>
+			<explanation>This phrase should be interpreted as a recollective question, typically self-posed, but can also be asked as a "group" question,
+			looking quizzically at someone who should be expected to know this too.</explanation>
+		</example>
+	</entry>
+
+	<entry id="49">
+		<particle>ったって</particle>
+		<use>連体形 suffix</use>
+		<description>Indicates a hypothetical action.</description>
+		<!-- SUPPLY EXAMPLES 
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		-->
+	</entry>
+
+	<entry id="50">
+		<particle>ったら</particle>
+		<use>phrase suffix</use>
+		<description>Emphasises an entire sentence</description>
+		<roles>
+			<role>I said:</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp">ねえ。<s>ね<p>ったら</p></s>。</phrase>
+			<phrase lang="en">Hey... *HEY*</phrase>
+			<explanation>This example requires some explanation: the use of ったら only makes sense when trying to pull someone back into a conversation,
+			and is typically added to statements intended for this purpose. The one given here is simply a speaker trying to get someone's attention by using
+			the "empty" word ねえ, similar in role to the English "hey". The addition of ったら does roughly the same as repeating the word in English does, with
+			added stress.</explanation>
+		</example>
+	</entry>
+
+	<entry id="54">
+		<particle>づつ</particle>
+		<use>outdated</use>
+		<description>Discouraged written form of ずつ in modern Japanese.</description>
+		<see id="36">ずつ</see>
+	</entry>
+
+	<entry id="56">
+		<particle>って</particle>
+		<use>phrase suffix</use>
+		<description>Quoting particle, contracted form of と言って. Sometimes used as a colloquial replacement for と in its quoting/stating role.</description>
+	</entry>
+
+	<entry id="55">
+		<particle>て</particle>
+		<use>Follows verbal 連用形</use>
+		<description>Verb conjunctive for listing verb actions with explicit sequence. 連用形 of the classical helper verb つ [て・て・つ・つ/る・つれ・てよ]. 
+		Contracts with 五段 verbs in the same way as past tense た.</description>
+		<roles>
+			<role>,</role>
+			<role>and</role>
+		</roles>
+		<contrast id="51">たり</contrast>
+		<see id="13">た</see>
+		<example role="sequence">
+			<phrase lang="jp"><ruby><rb>朝</rb><rt>あさ</rt></ruby>ごはんを<s><ruby><rb>食</rb><rt>た</rt></ruby>べ<p>て</p></s><ruby><rb>学校</rb><rt>がっこう</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>きます。</phrase>
+			<phrase lang="en">I will eat breakfast and go to school [in that order].</phrase>
+			<explanation>the て form does not carry any intrinsic mood or tense, and so the last verb in a series of て statements indicates which
+			inflection should be thought of. This may lead to confusion when て forms are used in a trailing sentence, where the actual operative verb
+			is simply left off.</explanation>
+		</example>
+		<example role="adjectival">
+			<phrase lang="jp"><s><ruby><rb>赤</rb><rt>あか</rt></ruby>く<p>て</p></s><ruby><rb>小</rb><rt>ちい</rt></ruby>さなカバンを<ruby><rb>買</rb><rt>か</rt></ruby>いました。</phrase>
+			<phrase lang="en">I bought a red, small bag.</phrase>
+			<explanation>While sequence does not matter for adjectival properties, it does matter in delivery; the later in the series, the more impotant the speaker
+			is likely to consider the property. Note that here is an exception to the て form for verbal adjectives, being ない. This adjective can either inflect regularly
+			as なくて, or almost noun-adjectivally in the form ないで. The latter is colloquially used, the former is more literary style. It should also be noted that the て
+			form can be ignored in colloquial speech, where listing properties can simply be done with the verbal adjective in 連体形 - noun adjectives still require
+			the て form of です (で) for chaining.</explanation>
+		</example>
+		<example role="reason">
+			<phrase lang="jp"><s><ruby><rb>疲</rb><rt>つか</rt></ruby>れ<p>て</p></s>、そろそろ<ruby><rb>寝</rb><rt>ね</rt></ruby>ます。</phrase>
+			<phrase lang="en">I'm tired, so I'll be going to sleep soon.</phrase>
+			<explanation>This is basically the same as sequence listing, but because of the meaning of the words used it can be translated as giving a reason for something.
+			The japanese literally just reads "I am tired, I will go to bed soon". The "so" given in the English translation is merely there to turn the English slightly
+			more natural sounding, but it is this tendency that has earned て a repuation of somehow also being able to state reason; technically it doesn't do this at all.</explanation>
+		</example>
+	</entry>
+
+	<entry id="57">
+		<particle>で</particle>
+		<use>noun phrase suffix</use>
+		<description>Marks a noun as instrument of an action.</description>
+		<roles>
+			<role>by</role>
+			<role>with</role>
+		</roles>
+		<contrast id="58">で</contrast>
+		<contrast id="59">で</contrast>
+		<example role="example">
+			<phrase lang="jp">これを<s><ruby><rb>筆</rb><rt>ふで</rt></ruby><p>で</p></s><ruby><rb>書</rb><rt>か</rt></ruby>きました。</phrase>
+			<phrase lang="en">I wrote this with a brush.</phrase>
+			<explanation>In this phrase the brush is the instrument for writing, and as such as is marked with で.</explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"><s>タクシー<p>で</p></s><ruby><rb>空港</rb><rt>くうこう</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>きました。</phrase>
+			<phrase lang="en">We went to the airport by taxi.</phrase>
+			<explanation>In this phrase the taxi is the "instrument" by which 'going to the airport' is performed, and as such is marked with で.</explanation>
+		</example>
+	</entry>
+
+	<entry id="58">
+		<particle>で</particle>
+		<use>location suffix</use>
+		<description>Used with location nouns or noun phrases to emphasise location of an event or action, rather than the action or event itself.</description>
+		<roles>
+			<role>at</role>
+			<role>in</role>
+			<role>by</role>
+		</roles>
+		<contrast id="57">で</contrast>
+		<contrast id="59">で</contrast>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>池</rb><rt>いけ</rt></ruby>にあるホテル<p>で</p></s><ruby><rb>泊</rb><rt>と</rt></ruby>まった。</phrase>
+			<phrase lang="en">We stayed the night at a hotel by the lake.</phrase>
+			<explanation>This phrase should be interpreted as answering the question "Where did you stay the night". This phrase focusses explicitly
+			on the "where" of matters, not on the "what-is-done" of matters. It is possible to get confused by looking at the English translation only, as 
+			one might think this could also be an answer to the question "what did you do [during your trip]", but in Japanese there is no such mistake possible;
+			で explicitly marks "where", while に explicitly marks "what", so it is impossible to get confused about the interpretation of a sentence as long as we
+			are looking at a Japanese phrase. If instead a translation from English is required, then the choice becomes somewhat arbitrary, as a translation 
+			cannot be given without first deciding which aspect should be focussed on.</explanation>
+		</example>
+	</entry>
+
+	<entry id="59">
+		<particle>で</particle>
+		<use>noun phrase suffix</use>
+		<description>て form of the polite copula です.</description>
+		<roles>
+			<role>is [X], and </role>
+		</roles>
+		<contrast id="57">で</contrast>		
+		<contrast id="58">で</contrast>		
+		<example role="continuative">
+			<phrase lang="jp"><s><ruby><rb>父</rb><rt>ちち</rt></ruby>は54<ruby><rb>歳</rb><rt>さい</rt></ruby><p>で</p></s>、<ruby><rb>母</rb><rt>はは</rt></ruby>は52<ruby><rb>歳</rb><rt>さい</rt></ruby>です。</phrase>
+			<phrase lang="en">My father is 54, my mother 52.</phrase>
+			<explanation>This is the simplest use of です in て form, where the two separate factoids 父が54歳です and 母が52歳です are joined into a single
+			sentence, with the subject markers replaced by context markers instead as we now have two subphrases that can be placed in each other's context.
+			(see the entry on は for a more detailed explanation of this use).</explanation>
+		</example>
+		<example role="noun adjective listing">
+			<phrase lang="jp"><ruby><rb>彼女</rb><rt>かのじょ</rt></ruby>が<s><ruby><rb>静</rb><rt>とず</rt></ruby>か<p>で</p></s><ruby><rb>小</rb><rt>ちい</rt></ruby>さくて<ruby><rb>目</rb><rt>め</rt></ruby>に<ruby><rb>付</rb><rt>つ</rt></ruby>かない<ruby><rb>人</rb><rt>ひと</rt></ruby>です。</phrase>
+			<phrase lang="en">She's quiet, small, not someone you'd notice.</phrase>
+			<explanation>This is essentially no different from the previous example where で is used as a continuative, except that there is a sense of "chaining" of
+			attributes going on. </explanation>
+		</example>
+	</entry>
+
+	<entry id="60">
+		<particle>でさえ</particle>
+		<compound>で+さえ</compound>
+		<use>noun phrase suffix</use>
+		<description>A compound of the て form of です and さえ.</description>
+		<see id="29">さえ</see>
+	</entry>
+
+	<entry id="65">
+		<particle>です</particle>
+		<use>noun phrase suffix</use>
+		<description>Polite copula.</description>
+		<roles>
+			<role>is</role>
+		</roles>
+		<see id="40">だ</see>
+		<example role="example">
+			<phrase lang="jp">これは<s><ruby><rb>鉛筆</rb><rt>えんぴつ</rt></ruby><p>です</p></s>。</phrase>
+			<phrase lang="en">This is a pencil.</phrase>
+			<explanation>です defines one item as something else, however due to context sensitivity in Japanese, the actual item itself may be omitted.
+			There are several copula constructions of which です is the most neural polite. Alternatives are だ, である, だござる and でいらっしゃる.</explanation>
+		</example>
+	</entry>
+	
+	<entry id="146">
+		<particle>ですね</particle>
+		<compound>です+ね</compound>
+		<use>mid-sentence emphatic</use>
+		<description>Used midsentence, this construction can be used to emphasise bits of information as well as rhetorically confirm that a listener is still following the speaker.</description>
+		<roles>
+			<role>is</role>
+		</roles>
+		<see id="88">ね</see>
+		<example role="example">
+			<phrase lang="jp">それは<p>ですね</p>、<ruby><rb>考</rb><rt>かんが</rt></ruby>えてたんだけど、やっぱり<ruby><rb>駄目</rb><rt>だめ</rt></ruby>だと<ruby><rb>思</rb><rt>おも</rt></ruby>いますよ。</phrase>
+			<phrase lang="en">About that; I gave the matter some thought, but I think it won't do any good.</phrase>
+			<explanation>As regular sentence それはです would make no grammatical sense at all, but as an attention grabbing interjection ですね does nothing more
+			than to add in a little unexpected word to get a listenere to take note (possibly "again", to keep them engaged in the conversation).</explanation>
+		</example>
+	</entry>
+
+	<entry id="61">
+		<particle>ては</particle>
+		<compound>て+は</compound>
+		<use>て form</use>
+		<description>Combination of verb て form and は, used for remarking on the quality of a verb action, usually in a negative sense. Colloquially contracted to ちゃ.</description>
+		<see id="52">ちゃ</see>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>今日</rb><rt>きょう</rt></ruby>こなく<p>ては</p></s><ruby><rb>絶対</rb><rt>ぜったい</rt></ruby><ruby><rb>駄目</rb><rt>だめ</rt></ruby>です。</phrase>
+			<phrase lang="en">You *have* to come today.</phrase>
+			<explanation>A more literal translation, in part illustrating how the natural translation came to be, would be "Not coming today  really won't do". The continuative act "not coming today"
+			gives rise to the comment that this will not do.</explanation>
+		</example>
+	</entry>
+
+	<entry id="62">
+		<particle>では</particle>
+		<compound>で+は</compound>
+		<use></use>
+		<description>A combination of で and は. Colloquially contracted to じゃ.</description>
+		<see id="33">じゃ</see>
+		<example role="compound">
+			<phrase lang="jp"><s>そう<p>では</p></s>ないか。</phrase>
+			<phrase lang="en">It that so?</phrase>
+			<explanation>An interrogative question, using the more formal counterpart to じゃない.</explanation>
+		</example>
+		<example role="interjection">
+			<phrase lang="jp"><p>では</p>、お<ruby><rb>休</rb><rt>やす</rt></ruby>みなさい。</phrase>
+			<phrase lang="en">Well then, good night.</phrase>
+			<explanation>This use of では is also colloquially performed by じゃ.</explanation>
+		</example>
+	</entry>
+
+	<entry id="63">
+		<particle>ってば</particle>
+		<use>phrase suffix</use>
+		<description>Colloquial contracted form of と言えば, used to emphatically introduce a topic.</description>
+		<!-- 
+		wondering whether this needs an example...
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		-->
+	</entry>
+
+	<entry id="64">
+		<particle>ても</particle>
+		<compound>て+も</compound>
+		<use>て form</use>
+		<description>A compound of the verb conjunctive て and contrasting も.</description>
+		<roles>
+			<role>even if</role>
+			<role>even by</role>
+			<role>regardless of</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>電話</rb><rt>でんわ</rt></ruby>をかけ<p>ても</p></s><ruby><rb>日曜日</rb><rt>にちようび</rt></ruby>で<ruby><rb>誰</rb><rt>だれ</rt></ruby>も<ruby><rb>来</rb><rt>こ</rt></ruby>ないわ。</phrase>
+			<phrase lang="en">Even if you call them, it being a sunday no one will come by.</phrase>
+			<explanation>The act of calling is sketched as futile by ても, further elaborated on by the rest of the sentence.</explanation>
+		</example>
+	</entry>
+
+	<entry id="64">
+		<particle>でも</particle>
+		<compound>で+も</compound>
+		<use>noun phrase suffix, sentence starter</use>
+		<description>A compound of the て form of です and contrasting も.</description>
+		<roles>
+			<role>even as</role>
+			<role>even so</role>
+			<role>but</role>
+			<role>while</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"><s><ruby><rb>先生</rb><rt>せんせい</rt></ruby><p>でも</p></s><ruby><rb>分</rb><rt>わ</rt></ruby>からないものがあるんでしょう。</phrase>
+			<phrase lang="en">[But isn't it the case that] even as a teacher there things you don't understand.</phrase>
+			<explanation>In this example phrase the case of being a teacher is sketched as not being excempt from certain conditions.</explanation>
+		</example>
+		<example role="interjection">
+			<phrase lang="jp"><p>でも</p>、とうやって<ruby><rb>説明</rb><rt>せつめい</rt></ruby>していいですか。</phrase>
+			<phrase lang="en">But, how should I go about explaining this?</phrase>
+			<explanation>When used at the start of a sentence, でも acts as contrasting interjection, similar in meaning to the English "even so".</explanation>
+		</example>
+	</entry>	
+
+	<entry id="66">
+		<particle>と</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Accompaniment particle. This particle translates as several different things in english, all following from the concept of accompaniment: noun listing,
+		personal or conceptual accompaniment, simultaneous conditional, onomatopoeic/mimetic illustration, and quoting/stating. These translations apply to combinations
+		of と with plain nouns, people, verb phrases, onomatopoeia/mimesis, and full phrases respectively.</description>
+		<roles>
+			<role>and</role>
+			<role>with</role>
+			<role>when [x], [y] as well</role>
+			<role>going:</role>
+			<role>thus:</role>
+		</roles>
+		<example role="noun listing">
+			<phrase lang="jp"><ruby><rb>飲</rb><rt>の</rt></ruby>み<ruby><rb>物</rb><rt>もの</rt></ruby>は<s><ruby><rb>牛乳</rb><rt>ぎゅうにゅう</rt></ruby><p>と</p>ジュース</s>を<ruby><rb>買</rb><rt></rt></ruby>ってきた。</phrase>
+			<phrase lang="en">For drinks I bought milk and juice.</phrase>
+			<explanation>Here the list "milk and juice" represents an inclusive list. In this use と is not required for the last item in the list.</explanation>
+		</example>
+		<example role="personal accompaniment">
+			<phrase lang="jp">その<ruby><rb>映画</rb><rt>えいが</rt></ruby>を<s><ruby><rb>友達</rb><rt>ともだち</rt></ruby><p>と</p></s><ruby><rb>見</rb><rt>み</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>った。</phrase>
+			<phrase lang="en">I went to go see that film with a friend.</phrase>
+			<explanation>In this use と</explanation>
+		</example>
+		<!--
+		<example role="conceptual accompaniment">
+			<phrase lang="jp">その<ruby><rb>弱点</rb><rt>じゃくてん</rt></ruby>は<s><ruby><rb>力</rb><rt>ちから</rt></ruby><p>と</p>なられる</s>。</phrase>
+			<phrase lang="en">That weakness can become a strength.</phrase>
+			<explanation>This use of と is often hard to explain, and is explained as a "this is something that works only with なる and means...". however, the
+			meaning of this statement is not that hard when considering と an accompaniment marker. In this case, a weakness can be made a strength
+			accompanying the person being talked about.</explanation>
+		</example>
+		-->
+		<example role="simultaneous conditional">
+			<phrase lang="jp"><s><ruby><rb>彼</rb><rt>かれ</rt></ruby>が<ruby><rb>首</rb><rt>くび</rt></ruby>になる<p>と</p><ruby><rb>俺</rb><rt>おれ</rt></ruby>も<ruby><rb>退社</rb><rt>たいしゃ</rt></ruby>する</s>。</phrase>
+			<phrase lang="en">If he gets fired, I resign too.</phrase>
+			<explanation>The concept of と as accompaniment is very important here: this is not the traditional if/then relation that will be familiar in English,
+			but two actions accompanying each other: they are linked. Within the context that exists, either both happen, or both don't happen.</explanation>
+		</example>
+		<example role="onomatopoeia">
+			<phrase lang="jp"><ruby><rb>雨</rb><rt>あめ</rt></ruby>が<s>ザー<p>と</p></s><ruby><rb>降</rb><rt>ふ</rt></ruby>ってきた。</phrase>
+			<phrase lang="en">The rain came pouring down.</phrase>
+			<explanation>You will not find onomatopoeia back in a Japanese translation, as they fulfill meaningful roles in Japanese, unlike in English where they
+			are considered sound effects. In Japanese onomatopoeia are used to clarify certain aspects of certain events, and are used in animate spech. In this
+			particular example, the onomatopoeia ザー represents the sound of pouring rain, leading to an English translation using the word "pouring". This 
+			qualification of events using onomatopoeia comes from と making the onomatopoeia an accompaniment to some event.</explanation>
+		</example>
+		<example role="mimesis">
+			<phrase lang="jp"><ruby><rb>月光</rb><rt>げっこう</rt></ruby>で<ruby><rb>海</rb><rt>うみ</rt></ruby>が<s>きらきら<p>と</p></s><ruby><rb>光</rb><rt>ひか</rt></ruby>った。</phrase>
+			<phrase lang="en">The moonlight made the sea light up sparkling.</phrase>
+			<explanation>In this translation "sparkling" does not come from a verb, but from the adverbial construction きらきらと, which adds the aspect of きらきら, 
+			a mimesis representing sparkling, to the event of lighting up, 光る.</explanation>
+		</example>
+		<example role="quoting">
+			<phrase lang="jp"><s><ruby><rb>部屋</rb><rt>へや</rt></ruby>を<ruby><rb>片付</rb><rt>かたづ</rt></ruby>けて<p>と</p></s>お<ruby><rb>母</rb><rt>かあ</rt></ruby>さんが<ruby><rb>言</rb><rt>い</rt></ruby>いました。</phrase>
+			<phrase lang="en">"Clean up your room," said mother.</phrase>
+			<explanation>Because of what と means, there is no direct need for quotes in the original Japanese in order for it to be understood that a quote
+			is being delivered. With quote symbols, the phrase would look like 「部屋を片付けて」とお母さんが言いました.</explanation>
+		</example>
+		<example role="stating">
+			<phrase lang="jp"><s>それ<ruby><rb>程</rb><rt>ほど</rt></ruby>よくない<p>と</p></s>思うけど……</phrase>
+			<phrase lang="en">I don't think it's that good...</phrase>
+			<explanation>This sentence states the phrase それ程よくない as a thought, though the verb 思う can be replaced with any other verb that
+			can be used to state something (say, think, think about, know, inform, etc.).</explanation>
+		</example>
+	</entry>
+
+	<entry id="67">
+		<particle>とか</particle>
+		<compound>と+か</compound>
+		<use>noun phrase listing</use>
+		<description>A compound of と and か. Marks nouns or noun phrases as loosely representational items. Can be used on its own or in listing fashion.</description>
+		<roles>
+			<role>something such as</role>
+		</roles>
+		<see id="85">など</see>
+		<example role="example">
+			<phrase lang="jp">A: <ruby><rb>食</rb><rt>た</rt></ruby>べ<ruby><rb>物</rb><rt>もの</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>に<ruby><rb>何</rb><rt>なに</rt></ruby>が<ruby><rb>好</rb><rt>す</rt></ruby>きですか。</phrase>
+			<phrase lang="en">What kind of foods do you like?</phrase>
+			<phrase lang="jp">B: <ruby><rb>甘</rb><rt>あま</rt></ruby>いものが<ruby><rb>好</rb><rt>す</rt></ruby>きです。<s>アイス<p>とか</p></s>、<s>お<ruby><rb>菓子</rb><rt>かし</rt></ruby><p>とか</p></s>ね。</phrase>
+			<phrase lang="en">I like sweet things. Things like ice cream and confectionary [you know?].</phrase>
+			<explanation>Rather than give an exact, single answer, person B choses to list several items that meet his/her criteria instead.</explanation>
+		</example>
+	</entry>
+
+	<entry id="68">
+		<particle>との</particle>
+		<compound>と+の</compound>
+		<use>noun suffix</use>
+		<description>A compound of と (typically in the personal accompaniment interpretation) and の.</description>
+	</entry>
+
+	<entry id="69">
+		<particle>とも</particle>
+		<compound>と+も</compound>
+		<use>noun/連体形 suffix</use>
+		<description>A compound of と and も, can act in both interpretations of も</description>
+		<roles>
+			<role>no matter</role>
+			<role>regardless of whether</role>
+		</roles>
+		<example role="normal">
+			<phrase lang="jp">いつか<s><ruby><rb>君</rb><rt>きみ</rt></ruby><p>とも</p></s><ruby><rb>別</rb><rt>わか</rt></ruby>れるんだ。</phrase>
+			<phrase lang="en">One day we'll say our goodbyes too.</phrase>
+			<explanation>The correct interpretation of this sentence is that 君 is marked as an extreme in a way, similar to what ても does for verbs.</explanation>
+		</example>
+		<example role="contrastive">
+			<phrase lang="jp"><s><ruby><rb>何</rb><rt>なに</rt></ruby>をしよう<p>とも</p></s>、<ruby><rb>無意味</rb><rt>むいみ</rt></ruby>だ。</phrase>
+			<phrase lang="en">No matter what you do [now], it will be meaningless.</phrase>
+			<explanation>This is essentially the same as the first example, but then for verbs instead of nouns. See ても.</explanation>
+		</example>
+		<example role="strong emphatic">
+			<phrase lang="jp">A: <ruby><rb>帰</rb><rt>かえ</rt></ruby>ってもいいですか。</phrase>
+			<phrase lang="en">Is it okay if I go home?</phrase>
+			<phrase lang="jp">B: ええ、<s>いい<p>とも</p></s>。</phrase>
+			<phrase lang="en">Certainly.</phrase>
+			<explanation>Literally B says "yes, this is okay", but emphatically marks the statement as unquestionable.</explanation>
+		</example>
+	</entry>
+
+	<entry id="71">
+		<particle>ところ</particle>
+		<literary>所</literary>
+		<literary>処</literary>
+		<use>Follows 連体形</use>
+		<description>Aside from the literal "place", Indicates a conceptual "point".</description>
+		<example role="extent of behaviour">
+			<phrase lang="jp"><s><ruby><rb>叱</rb><rt>しか</rt></ruby>る<p>ところ</p></s>まで<ruby><rb>行</rb><rt>い</rt></ruby>く</phrase>
+			<phrase lang="en">To go so far as to scold [someone].</phrase>
+			<explanation>In this phrase ところ indicates the extent of something by marking the point up to which certain behaviour will go.</explanation>
+		</example>
+		<example role="attribute">
+			<phrase lang="jp">あの<ruby><rb>人</rb><rt>ひと</rt></ruby>は<ruby><rb>全</rb><rt>まった</rt></ruby>く<s>いい<p>ところ</p></s>がない。</phrase>
+			<phrase lang="en">That person really has no good points [to them].</phrase>
+			<explanation>In this phrase ところ marks attribute "points".</explanation>
+		</example>
+		<example role="temporal point">
+			<phrase lang="jp"><s><ruby><rb>危</rb><rt>あぶ</rt></ruby>ない<p>ところ</p>へ</s><ruby><rb>来</rb><rt>き</rt></ruby>てしまった。</phrase>
+			<phrase lang="en">They [unfortunately] arrived at a dangerous point in time.</phrase>
+			<explanation>In this phrase ところ simply marks a point in time which happens to be (in this case) dangerous.</explanation>
+		</example>
+		<example role="temporal point, based on an event">
+			<phrase lang="jp">ちょうど<s><ruby><rb>手紙</rb><rt>てがみ</rt></ruby>を<ruby><rb>書</rb><rt>か</rt></ruby>いた<p>ところ</p></s><ruby><rb>彼女</rb><rt>かのじょ</rt></ruby>が<ruby><rb>電話</rb><rt>でんわ</rt></ruby>した。</phrase>
+			<phrase lang="en">Just as I wrote her letter, she called.</phrase>
+			<explanation>Here ところ marks a point in time as indicated by a certain event.</explanation>
+		</example>
+	</entry>
+
+	<entry id="72">
+		<particle>どころ</particle>
+		<use>Follows a 連体形</use>
+		<description>Voiced version of ところ, used for </description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+
+	<gyou kana="な"/>
+	
+	<entry id="76">
+		<particle>な</particle>
+		<use>Follows a 連体形</use>
+		<description>Marks prohibitive command.</description>
+		<roles>
+			<role>don't ...</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="77">
+		<particle>な</particle>
+		<use>sentence ending</use>
+		<description>"Strong" version of ね.</description>
+		<see id="88">ね</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="78">
+		<particle>な</particle>
+		<use>noun phrase suffix</use>
+		<description>Sound changed version of the plain copula だ, if followed by の.</description>
+		<see id="40">だ</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="79">
+		<particle>なあ</particle>
+		<use>sentence ending</use>
+		<description>"Strong" version of ねえ.</description>
+		<see id="89">ねえ</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="83">
+		<particle>ながら</particle>
+		<literary>乍</literary>
+		<use>Follows verb 連用形</use>
+		<description>Marks the subordinate action in a situation where two actions are performed simultaneously.</description>
+		<roles>
+			<role>while</role>
+			<role>during</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="84">
+		<particle>ながらも</particle>
+		<literary>乍も</literary>
+		<compound>ながら+も</compound>
+		<use>Follows verb 連用形</use>
+		<description>A compound of ながら and contrasting も.</description>
+		<roles>
+			<role>even while</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="85">
+		<particle>など</particle>
+		<literary>等</literary>
+		<literary>抔</literary>
+		<compound>なに+と</compound>
+		<use>noun phrase listing</use>
+		<description>Marks nouns or noun phrases as loosely (categorially) representational. Can be used on its own or in listing fashion. Having come from なに+と
+		through なんと, can colloquially be used as なんか.</description>
+		<roles>
+			<role>things such as</role>
+		</roles>
+		<see id="67">とか</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="80">
+		<particle>なり</particle>
+		<use>Follows 連体形</use>
+		<description>Marks the situation as an event happens.</description>
+		<roles>
+			<role>the moment ... , ...</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="86">
+		<particle>なら</particle>
+		<use>noun phrase suffix</use>
+		<description>The 已然形 of the plain copula だ, used as shorthand form for the plain noun hypothetical conditional ならば.</description>
+		<roles>
+			<role>should it be ... then ...</role>
+		</roles>
+		<see id="87">ならば</see>		
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="87">
+		<particle>ならば</particle>
+		<compound>なら+ば</compound>
+		<use>noun phrase suffix</use>
+		<description>Compound of なら and ば. Acts as hypothetical conditional form for nouns.</description>
+		<roles>
+			<role>should it be ... then ...</role>
+		</roles>
+		<see id="86">なら</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="81">
+		<particle>なんか</particle>
+		<use>noun phrase listing</use>
+		<description>Colloquial form of など.</description>
+		<see id="85">など</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="82">
+		<particle>なんて</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Belittles or downplays something. Colloquial particle.</description>
+		<roles>
+			<role>something like</role>
+			<role>or something</role>
+			<role>something as (belittlement) as</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="88">
+		<particle>ね</particle>
+		<use>sentence ending</use>
+		<description>Rhetorical sentence ending particle, assumes agreement.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="89">
+		<particle>ねえ</particle>
+		<use>sentence ending</use>
+		<description>More emphatic version of ね</description>
+		<see id="88">ね</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="90">
+		<particle>に</particle>
+		<use>noun phrase suffix</use>
+		<description>Affixing particle. This particle translates as several different things in english, all following from the concept of affixing: specifying time (point or interval),
+		specifying location (specific or loose), specifying reasoning (specific or loose), specifying relational objects or actors to verb actions. In all these roles the particle に
+		merely affixes an additional specific element to base information. Do not confuse the role of に affixing location, or "destination", with the role that へ plays in marking
+		direction rather than destination.</description>
+		<roles>
+			<role>any affixing prepositional statement (in, at, to, by, for, from, with)</role>
+		</roles>
+		<contrast id="104">へ</contrast>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="91">
+		<particle>にて</particle>
+		<compound>に+て</compound>
+		<use>noun phrase suffix</use>
+		<description>A compound of に and て, formal version of instrumental で.</description>
+		<see id="57">で</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="92">
+		<particle>には</particle>
+		<compound>に+は</compound>
+		<use>noun phrase suffix</use>
+		<description>A compound of に and は. Creates a contrast in addition to affixing (further) specification.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="93">
+		<particle>にも</particle>
+		<compound>に+も</compound>
+		<use>noun phrase suffix</use>
+		<description>A compound of に and も.</description>
+		<roles>
+			<role>even (preposition implied by に)</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="94">
+		<particle>の</particle>
+		<use>noun phrase suffix</use>
+		<description>Genetive particle, denotes a conceptual "following from" relation between the suffixed noun or nounphrase as origin. This relation translates as several
+		different things in english, all following from this concept: posession, direct relation, and taxonomical specification</description>
+		<roles>
+			<role>X's Y</role>
+			<role>The Y of X</role>
+			<role>Y X</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="95">
+		<particle>の</particle>
+		<use>verb phrase suffix</use>
+		<description>Follows 連体形. Nominalises a verb phrase.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="96">
+		<particle>の</particle>
+		<use>sentence ending</use>
+		<description>This is a soft emphatic, used in reserved speech.</description>
+		<see id="130">よ</see>
+	</entry>
+
+	<entry id="97">
+		<particle>の</particle>
+		<use>noun phrase suffix</use>
+		<description>Genetive particle used as replacement for the plain copula だ in certain phrase patterns using subphrase.</description>
+		<see id="40">だ</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="99">
+		<particle>のだ</particle>
+		<compound>の+だ</compound>
+		<use>noun phrase suffix</use>
+		<description>Informal version of のです.</description>
+		<see id="101">のです</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="100">
+		<particle>ので</particle>
+		<compound>の+で</compound>
+		<use>noun phrase suffix</use>
+		<description>Verb continuitive て form of のです, indicates an objective causative. As it stresses objective information, it cannot be used to specify requests,
+		opinions, commands, invitations, suggestions or volitional actions. Is used as formal counterpart to から, if used to specify objective cause.</description>
+		<roles>
+			<role>due to</role>
+		</roles>
+		<see id="11">から</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="101">
+		<particle>のです</particle>
+		<compound>の+です</compound>
+		<use>noun phrase suffix</use>
+		<description>Compound of nominalising の and polite copula です. Marks a phrase as explanation or justification of a particular assumption by someone or
+		situation someone is in. When used in a question (followed by か), this construction asks for such an explanation or justification (while a copula question,
+		this pattern forces the answer to be in a のです better too, rather than a yes/no form).</description>
+		<roles>
+			<role>it is that ...</role>
+		</roles>
+		<see id="99">のだ</see>
+		<see id="137">んだ</see>
+		<see id="138">んです</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="98">
+		<particle>のに</particle>
+		<compound>の+に</compound>
+		<use>verb phrase suffix</use>
+		<description>A compound of the nominalising の + reasoning affixing に. Sets up a contrast between what follows, and what would be
+		expected given what precedes it. Not to be confused with genetive の + relational object に, which is not special in any way.</description>
+		<roles>
+			<role>even though</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="102">
+		<particle>のみ</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Formal counterpart to だけ and ばかり.</description>
+		<roles>
+			<role>just</role>
+			<role>only</role>
+			<role>merely</role>
+		</roles>
+		<see id="43">だけ</see>
+		<see id="110">ばかり</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+
+
+	<gyou kana="は"/>
+	
+	<entry id="103">
+		<particle>は</particle>
+		<use>noun phrase suffix</use>
+		<description>Topic or contextual information marker. Pronounced わ. Using は for information that does not seem contextual "forces" a listener or reader
+		to find a context in which this information would make sense as contextual information, typically leading to the statement being interpreted as contrasting
+		in some way.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="108">
+		<particle>ば</particle>
+		<use>Follows 已然形</use>
+		<description>Marks an hypothetical conditional (in contrast to the simultaneous conditional と, or hypothetical past future たら).</description>
+		<roles>
+			<role>should ... , ...</role>
+		</roles>
+		<contrast id="66">と</contrast>
+		<see id="48">たら</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="109">
+		<particle>ばかし</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial version of ばかり.</description>
+		<see id="108">ばかり</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="110">
+		<particle>ばかり</particle>
+		<literary>許り</literary>
+		<use>noun/verb phrase suffix</use>
+		<description>Marks something as being so dominant it represses all other things. Also used in the more emphatic versions ばかし, ばっかし, ばっかり or ばっか.</description>
+		<roles>
+			<role>only</role>
+			<role>purely</role>
+		</roles>
+		<see id="109">ばかし</see>
+		<see id="11">ばっか</see>
+		<see id="112">ばっかし</see>
+		<see id="113">ばっかり</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="142">
+		<particle>はず</particle>
+		<literary>筈</literary>
+		<use>Follows 連体形</use>
+		<description>Marks something as being an expectation.</description>
+		<contrast id="143">べき</contrast>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation>Because it is commonly translated with "should", this particle may be confused with べき (べし), as the word "should" in English can
+			signify either an expectation or a (social) obligation. The first interpretation is reserved for はず, the second for べき (べし)</explanation>
+		</example>
+	</entry>
+
+	<entry id="111">
+		<particle>ばっか</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial emphatic version of ばかり.</description>
+		<see id="110">ばかり</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="112">
+		<particle>ばっかし</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial version of ばかり.</description>
+		<see id="110">ばかり</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="113">
+		<particle>ばっかり</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial emphatic version of ばかり.</description>
+		<see id="110">ばかり</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="104">
+		<particle>へ</particle>
+		<use>location suffix</use>
+		<description>Marks a direction of travel or motion. Pronounced え. Do not confuse へ with に as affixing particle for location, interpreted as "destination". In
+		a line of travel, へ marks only the line without regard for the end points, に marks only the end point.</description>
+		<contrast id="90">に</contrast>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="143">
+		<particle>べき</particle>
+		<literary>可き</literary>
+		<use>verb phrase suffix</use>
+		<description>Follows 連体形. Marks something as being a (social) obligation. This is the 連体形 of the classical adjective べし.</description>
+		<see id="144">べし</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation>Special case: すべき rather than するべき</explanation>
+		</example>
+	</entry>
+
+	<entry id="144">
+		<particle>べし</particle>
+		<literary>可し</literary>
+		<use>verb phrase suffix</use>
+		<description>Classical adjective, follows 連体形. Marks something as being a (social) obligation. While technically an abolished 終止形 form,
+		this word is still in use in modern Japanese, and can be used interchangably with the more "modern" 連体形 form べき.</description>
+		<see id="143">べき</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="105">
+		<particle>への</particle>
+		<compound>へ+の</compound>
+		<use>location suffix</use>
+		<description>A compound of へ and の.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="106">
+		<particle>ほど</particle>
+		<literary>程</literary>
+		<use>quantity/verbal phrase suffix</use>
+		<description>Marks the degree of something, which is interpreted as extent for actions, or approximate amount for quantities. In this second role
+		it is comparable to くらい/ぐらい</description>
+		<see id="19">くらい</see>
+		<see id="20">ぐらい</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="107">
+		<particle>ほか</particle>
+		<literary>他</literary>
+		<use>phrase suffix</use>
+		<description>Changes the meaning of a preceding phrase to "other than ...", and is followed by a negative verb to indicate that excluding the mentioned phrase, nothing else applies.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+	
+
+
+	<gyou kana="ま"/>
+
+	<entry id="114">
+		<particle>まで</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Indicates the extent of something for which から can act as origin. This means not just time or space, but also reasoning or arguments (i.e:
+		carrying an argument too far). まで represents exclusive extent, meaning "up to" but not "up to and including" (see までに).</description>
+		<roles>
+			<role>up to</role>
+			<role>up till</role>
+		</roles>
+		<contrast id="11">から</contrast>
+		<see id="117">までに</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="117">
+		<particle>までに</particle>
+		<use>noun/verb phrase suffix</use>
+		<compound>まで+に</compound>
+		<description>A compound of まで and affixing に. Means "up to and including", as opposed to まで meaning merely "up to".</description>
+		<see id="114">まで</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="115">
+		<particle>までの</particle>
+		<compound>まで+の</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>A compound of まで and the genitive の.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="116">
+		<particle>までも</particle>
+		<compound>まで+も</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>A compound of まで and も. Indicates the non-existent of an extent (that might otherwise be assumed).</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="141">
+		<particle>み</particle>
+		<literary>御</literary>
+		<use>noun prefix</use>
+		<description>Honorifix prefix. Used (predominantly) for words relating to the emperor or emperial matters.</description>
+		<see id="139">お</see>
+		<see id="140">ご</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="118">
+		<particle>も</particle>
+		<use>noun phrase suffix</use>
+		<description>Equality marker. This particle can be used in two ways that are considered distinct in English, but follow from the
+		concept of equality: similarity (two objects being equal in some respect) and uniformness (a certain concept can be said to consist
+		of any number of parts, each of which is equal to any other in some [same] respect).</description>
+		<roles>
+			<role>also</role>
+			<role>too</role>
+			<role>even</role>
+			<role>as well</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="119">
+		<particle>もの</particle>
+		<literary>物</literary>
+		<use>noun/verb phrase suffix</use>
+		<description>One of the two main divisions in Japanese, もの represents the "real" things as opposed to the "abstract" things (=こと). Used as particle it
+		marks the preceding phrase as a "real" (either observed or socially implied) reason or motivation for certain behaviour. Note that this behaviour does
+		not need to be explicit and can be implied by what someone says instead. Colloquially shortened to もん.</description>
+		<roles>
+			<role>because</role>
+		</roles>
+		<contrast id="26">こと</contrast>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="120">
+		<particle>ものか</particle>
+		<compound>もの+か</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>A compound of もの and か. Used as sentence ending to phrases in negative form to emphasise this negative.  Formally used as ものですか
+		(colloquially もんですか) or colloquially as もんか.</description>
+		<roles>
+			<role>exclaiming question</role>
+			<role>strong rhetoric</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="121">
+		<particle>もので</particle>
+		<compound>もの+で</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>A compound of もの and the verb conjunctive て form of です. Colloquially used as もんで.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="122">
+		<particle>ものなら</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>A compound of もの and なら. Colloquially used as もんなら.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+
+	<entry id="123">
+		<particle>ものを</particle>
+		<compound>もの+を</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>A compound of もの and を. Expresses a dissatisfaction over an issue.</description>
+		<roles>
+			<role>although</role>
+			<role>if only</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="124">
+		<particle>もん</particle>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial form of もの.</description>
+		<see id="119">もの</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="125">
+		<particle>もんか</particle>
+		<compound>もん+か</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial form of ものか.</description>
+		<see id="120">ものか</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="126">
+		<particle>もんで</particle>
+		<compound>もん+で</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial form of もので.</description>
+		<see id="121">もので</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="127">
+		<particle>もんなら</particle>
+		<compound>もん+なら</compound>
+		<use>noun/verb phrase suffix</use>
+		<description>Colloquial form of ものなら.</description>
+		<see id="122">ものなら</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+	
+
+
+	<gyou kana="や"/>
+	
+	<entry id="128">
+		<particle>や</particle>
+		<use>noun listing</use>
+		<description>Open noun listing particle. Implies more items than are listed.</description>
+		<roles>
+			<role>amongst other things ...</role>
+		</roles>
+		<contrast id="66">と</contrast>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="129">
+		<particle>や</particle>
+		<use>sentence ending</use>
+		<description>string hopeful rhetoric, similar to じゃない. </description>
+		<see id="35">じゃない</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="130">
+		<particle>よ</particle>
+		<use>sentence ending</use>
+		<description>Emphatic particle, added to phrases or even subphrases to underline some part of dialog.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="131">
+		<particle>より</particle>
+		<use>noun phrase suffix</use>
+		<description>Subordinance marker. Used in formal writing as replacement for から.</description>
+		<roles>
+			<role>rather than</role>
+		</roles>
+		<see id="11">から</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+
+
+	<gyou kana="わ"/>
+	
+	<entry id="132">
+		<particle>わ</particle>
+		<use>sentence ending</use>
+		<description>In "standard" Japanese an effeminate (in most other regional dialects of Japanese a neutral gender) emphatic, softer than よ</description>
+		<see id="130">よ</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="133">
+		<particle>わ</particle>
+		<use>noun listing</use>
+		<description>Colloquial open noun listing particle</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="134">
+		<particle>わい</particle>
+		<compound>わ+い</compound>
+		<use>sentence ending</use>
+		<description>A compound of わ and い.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="135">
+		<particle>を</particle>
+		<use>noun phrase suffix</use>
+		<description>Direct object marker. Pronounced お.</description>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="136">
+		<particle>をば</particle>
+		<compound>を+ば</compound>
+		<use>outdated</use>
+		<description>A compound of を and は, which is sound changed in this comination. Used mainly in classical style Japanese to raise a matter of concern using を and then
+		discuss it as contextual information using は.</description>
+		<roles>
+			<role>as far as  ... is concerned</role>
+		</roles>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+
+
+	<gyou kana="ん"/>
+
+	<entry id="137">
+		<particle>んだ</particle>
+		<compound>ん+だ</compound>
+		<use>noun phrase suffix</use>
+		<description>Contracted form of のだ.</description>
+		<see id="99">のだ</see>
+		<see id="101">のです</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+
+	<entry id="138">
+		<particle>んです</particle>
+		<compound>ん+です</compound>
+		<use>noun phrase suffix</use>
+		<description>Contracted form of のです.</description>
+		<see id="101">のです</see>
+		<example role="example">
+			<phrase lang="jp"></phrase>
+			<phrase lang="en"></phrase>
+			<explanation></explanation>
+		</example>
+	</entry>
+	
+
+</particles>

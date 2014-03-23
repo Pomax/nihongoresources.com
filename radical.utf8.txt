@@ -1,0 +1,215 @@
+﻿//** Radical basefile V2.02.2003 MKAMERMANS - format: kanji [hira] Bbushu Sstrokes N(nickname) english|-
+一 [いち] B1 S1 N(One) One
+｜ [ぼう] B2 S1 N(Rod) Rod, Stick, Line
+丶 [てん] B3 S1 N(Dot) Dot, Point, Japanese accent mark
+ノ [の] B4 S1 N(Kana no) Katakana no
+乙 [おつ] B5 S1 N(Fishhook) Fish hook, Second (in order)
+亅 [はねぼう] B6 S1 N(Barb) Feathered stick, Kagi hook, Barb
+二 [に] B7 S2 N(Two) Two
+亠 [なべぶた] B8 S2 N(Lid) Kettle, Lid
+人 [ひと] B9 S2 N(Man) Man
+儿 [ひとあし] B10 S2 N(Legs) Human Legs
+入 [いる] B11 S2 N(Entering) Enter, Entering
+八 [はち] B12 S2 N(Eight) Eight
+冂 [どうがまえ まきがまえ けいがまえ] B13 S2 N(Upside-down box) Upside-down box
+冖 [わかんむり べきかんむり] B14 S2 N(Kana wa) Katakana wa
+冫 [にすい] B15 S2 N(Ice) Ice, Two-stroke water
+几 [つくえ きにょう かぜがまえ] B16 S2 N(Windy) Windy, Table, Table enclosure, Wind enclosure
+凵 [うけばこ かんがまえ] B17 S2 N(Open Box) Open Box
+刀 [かたな] B18 S2 N(Sword) Sword
+力 [ちから] B19 S2 N(Strong) Strength
+勹 [つつみがまえ] B20 S2 N(Wrapping) Wrapping enclosure
+匕 [さじ ヒ] B21 S2 N(Kana hi) Katakana hi
+匚 [はこがまえ] B22 S2 N(Box on side) Box-on-side enclosure
+匸 [かくしがまえ] B23 S2 N(Hiding) This is typically considered a variant of radical 22.
+十 [じゅう] B24 S2 N(Cross) Ten
+卜 [うらない] B0 S2 N(Kana to) Katakana to
+卩 [わりふ ふしずくり] B26 S2 N(Seal) Seal, Joint
+厂 [がんだれ いちだれ] B27 S2 N(Cliff) Trailing 'cliff', Trailing goose (used in the kanji for wild goose)
+厶 [む] B28 S2 N(Kana mu) Katakana mu
+又 [また] B29 S2 N(Again) Again
+口 [くち] B30 S3 N(Mouth) Mouth
+囗 [くにがまえ] B31 S3 N(Box) Enclosure as in kuni (country)
+土 [つち] B32 S3 N(Earth) Earth, Soil
+士 [さむらい] B33 S3 N(Samurai) Samurai
+夂 [ふゆがしら なつあし すいにょう] B34 S3 N(Winter) Winter
+夂 [すい ゆく] B35 S3 N(Winter Variant) This radical is classified as radical 75 if used as kanji component, and subsequently has no EUC code of it's own.
+夕 [ゆうべ た] B36 S3 N(Kana ta) Katakana ta, Evening
+大 [だい] B37 S3 N(Big) Big
+女 [おんな] B38 S3 N(Woman) Woman
+子 [こ] B39 S3 N(Child) Child
+宀 [うかんむり] B40 S3 N(Kana u) Katakana u
+寸 [すん] B41 S3 N(Inch) Japanese inch
+小 [しょう] B42 S3 N(Little) Little, Small
+尢 [だいのまげあし もっとも] B43 S3 N(Crooked big) Crooked-leg big, just, right, reasonable, natural
+尸 [しかばね かばね] B44 S3 N(Flag) Corpse
+屮 [ふるくさ] B45 S3 N(Old grass) Less complicated version of radical 140, 'grass'
+山 [やま] B46 S3 N(Mountain) Mountain
+川 [かわ さんぼんかわ] B47 S3 N(River) River, Three-stroke river (as opposed to the 8-stroke kanji for river)
+工 [え] B48 S3 N(Kana e) Katakana e
+已 [おのれ] B49 S3 N(Snake) Self
+巾 [はば きん きれ] B50 S3 N(Cloth) Width, Cloth
+干 [かん いちじゅう] B51 S3 N(One Ten) Dry, Combination of radical 1 'ichi' and radical 24 'juu'
+幺 [いとがしら] B52 S3 N(Short thread) At top: thread, At left: young
+广 [まだれ] B53 S3 N(Dotted Cliff) Dotted Cliff
+廴 [えんにょう いんにょう いんにゅう] B54 S3 N(Streching) Long stride
+廾 [にじゅう] B55 S3 N(Letter H) 'Twenty' legs
+弋 [しきがまえ] B56 S3 N(Ceremony) Ceremony enclosure
+弓 [ゆみ] B57 S3 N(Bow) Bow (archery)
+ヨ [けいがしら いのかしら よ] B58 S3 N(Pig's head) Pig's head, Katakana yo
+彡 [かみかざり] B59 S3 N(Short hair) Hair ornament
+彳 [ぎょうにんべん] B60 S3 N(Going man) With the exception of the kanji for going (R144), all kanji that historically use radical 144 are indexed under this radical instead.
+心 [こころ] B61 S4 N(Heart) Heart
+戈 [ほこ] B62 S4 N(Tasseled spear) Tassled Spear
+戸 [と とがしら かんむり とだれ] B63 S4 N(Door) Door
+手 [て] B64 S4 N(Hand) Hand
+支 [し えだ じゅうまた] B65 S4 N(Branch) Branch, Radical 24 and radical 29
+攵 [ぼく とまた] B66 S4 N(Folding Chair) Strike, Katakana to and radical 29
+文 [ぶん] B67 S4 N(Literary) Literature
+斗 [と とます] B68 S4 N(Dots and cross) A unit of measure
+斤 [きん おの] B69 S4 N(Axe) A Japanese Pound, Axe
+方 [ほう かた] B70 S4 N(Direction) Direction, Side, Person
+无 [む なし] B71 S4 N(Crooked heaven) Nothing
+日 [ひ にち] B72 S4 N(Sun) Day
+曰 [いわく ひらび] B73 S4 N(Flat sun) To speak. This radical is classified as radical 72 if used as kanji component.
+月 [つき] B74 S4 N(Moon) Moon. This radical is classified as radical 130 if used as kanji component.
+木 [き] B75 S4 N(Tree) Tree
+欠 [あくび けん けつ かける] B76 S4 N(Yawning) Yawn, Lacking
+止 [とめる] B77 S4 N(Stopping) Stop
+歹 [いちた がつ] B78 S4 N(Death) Radical 1 and radical 36, Dried bones
+殳 [るまた] B79 S4 N(Windy again) Radical 16 (katakana ru) and radical 29
+母 [はは かんのはは なかれ] B80 S4 N(Mother) Mother, Similar to the top element of 'kan', a Japanese unit of weight, Not
+比 [くらべる] B81 S4 N(Comparing) To compare
+毛 [け] B82 S4 N(Fur) Hair (of animals)
+氏 [うじ] B83 S4 N(Clan) Surname, Clan
+气 [きがまえ] B84 S4 N(Steam) Vapor enclosure
+水 [すい みず] B85 S4 N(Water) Water
+火 [ひ か] B86 S4 N(Fire) Fire
+爪 [つめ] B87 S4 N(Claw) Nail, Claw
+父 [ちち] B88 S4 N(Father) Father
+爻 [まじわる] B89 S4 N(Double X) to mix
+爿 [ひだりかた しょうへん] B90 S4 N(Left side) A left hand version of radical 91
+片 [みぎかた かたへん] B91 S4 N(Right side) A right hand version of radical 90
+牙 [きば] B92 S4 N(Tusk) Tusk
+牛 [うし] B93 S4 N(Cow) Cow
+犬 [いぬ] B94 S4 N(Dog) Dog
+玄 [げん] B95 S5 N(Dark) Blackness
+玉 [たま] B96 S5 N(Jewel) Jewel
+瓜 [うり] B97 S5 N(Melon) Melon
+瓦 [かわら] B98 S5 N(Tile) Tile
+甘 [あまい] B99 S5 N(Sweet) Sweet
+生 [うまれる] B100 S5 N(Birth) To be born
+用 [もちいる] B101 S5 N(Using) To use
+田 [た] B102 S5 N(Rice field) Rice paddy
+疋 [ひき] B103 S5 N(Animal Counter) Counter for animals
+   [やまいだれ] B104 S5 N(Sick) Trailing 'sickness'. This radical has no EUC symbol.
+癶 [はつがしら] B105 S5 N(Dotted tent)
+白 [しろい] B106 S5 N(White) White
+皮 [けがわ ひのかわ] B107 S5 N(Skin) Animal hide
+皿 [さら] B108 S5 N(Dish) Dish
+目 [め] B109 S5 N(Eye) eye
+矛 [ほこ] B110 S5 N(Spear) Spear
+矢 [や] B111 S5 N(Arrow) Arrow
+石 [いし] B112 S5 N(Stone) Stone
+示 [しめす] B113 S5 N(Showing) To show
+   [じゅう あしあと] B114 S5 N(Footprint) Footprint. This radical has no EUC symbol.
+禾 [のぎ] B115 S5 N(2-Branch tree) Radical 4 and radical 75
+穴 [あなかんむり] B116 S5 N(Cave) 'hole' crown
+立 [たつ] B117 S5 N(Stanging) To stand
+竹 [たけ] B118 S6 N(Bamboo) Bamboo
+米 [こめ] B119 S6 N(Rice) Rice
+糸 [いと] B120 S6 N(Long thread) Long thread
+缶 [みずがめ] B121 S6 N(Jar) Water jar
+   [あみがしら めがしら よこめ] B122 S6 N(Net) 'Net' crown, 'Eye' crown, Sideways 'eye'. This radical has no EUC symbol.
+羊 [ひつじ] B123 S6 N(Sheep) Sheep
+羽 [はね] B124 S6 N(Wing) Feather, Wing
+老 [ろう おい] B125 S6 N(Old man) Old
+而 [しかして] B126 S6 N(Rake) And then
+耒 [すきへん らいすき] B127 S6 N(3-Branch tree) Plow
+耳 [みみ] B128 S6 N(Ear) Ear
+聿 [ふで] B129 S6 N(Brush) Writing brush
+肉 [にく] B130 S6 N(Meat) Flesh, Meat. Used as classifier for radical 74.
+臣 [しん けらい] B131 S6 N(Minister (of state)) Retainer, Minister, Subject. This radical is 6 strokes eventhough it seems to be 7.
+自 [みずから] B132 S6 N(Dotted eye) Oneself
+至 [いたる] B133 S6 N(Arriving) To arrive
+臼 [うす] B134 S6 N(Mortar) Mortar
+舌 [した] B135 S6 N(Tongue) Tongue
+舛 [まいあし ます] B136 S6 N(Dancing) Dancing 'legs'. This rare radical is usually printed, written and counted in total kanji strokenumber as 7 strokes.
+舟 [ふねへん] B137 S6 N(Ship) Leftside 'ship'
+艮 [ねずくり] B138 S6 N(Good)
+色 [いろ] B139 S6 N(Color) Color
+艸 [くさ] B140 S6 N(Grass) Grass. This radical has no EUC symbol.
+虍 [とらかんむり とらがしら] B141 S6 N(Tiger) Tiger enclosure
+虫 [むし] B142 S6 N(Bug) Insect
+血 [ち] B143 S6 N(Dotted Dish) Blood
+行 [ゆきがまえ ぎょうがまえ] B144 S6 N(Going) 'Going' enclosure. This radical is classified as radical 60 if used as kanji component.
+衣 [ころも] B145 S6 N(Clothing) Clothes
+西 [にし] B146 S6 N(West) West
+見 [みる] B147 S7 N(Seeing) To see
+角 [つの] B148 S7 N(Horn) Horn
+言 [ことば] B149 S7 N(speaking) Word
+谷 [たに] B150 S7 N(Valley) Valley
+豆 [まめ] B151 S7 N(Bean) Bean
+豕 [ぶた いのこ] B152 S7 N(Pig) Pig
+豸 [むじな] B153 S7 N(Clawed dog) Badger
+貝 [かい こがい] B154 S7 N(Small shell) Shell
+赤 [あか] B155 S7 N(Red) Red
+走 [はしる] B156 S7 N(Running) To run
+足 [あし] B157 S7 N(Foot) Leg, Foot
+身 [み] B158 S7 N(Body) Body
+車 [くるま] B159 S7 N(Car) Car
+辛 [からい] B160 S7 N(Bitter) Bitter
+辰 [たつ] B161 S7 N() Dragon
+   [しんにゅう] B162 S7 N(Road) Always used as enclosure in modified form, This radical has no EUC symbol.
+邑 [ゆう] B163 S7 N(Right village) Large village. This radical is always used in modified form on the right hand of kanji identical to radical 170 in modified form.
+酉 [とり ひよりのとり] B164 S7 N(Sak衙 Bird of the Zodiac. In component form this radical often indicates liquid and is known as sakezukuri
+釆 [のごめ] B165 S7 N(Topped rice) Radical 4 and radical 119
+里 [さと り] B166 S7 N(Village) Village, Two and a half miles
+金 [かね] B167 S8 N(Metal) Metal, Money, Gold
+長 [ながい] B168 S8 N(Long) Long
+門 [もん かど] B169 S8 N(Gate) Gate
+阜 [こざと] B170 S8 N(Left village) Small Village. This radical is always used in modified form on the left hand of kanji identical to radical 163 in modified form.
+隶 [れいずくり] B171 S8 N(Slave) The right-hand element of the kanji rei 'servant, slave'
+隹 [ふるとり] B172 S8 N(Old Bird) Old version of 'bird'
+雨 [あめ] B173 S8 N(Rain) Rain
+青 [あおい] B174 S8 N(Blue) Blue, Blue-green. The western blue and the Japanese blue do not match. Aoi can describe a shade ranging from blue to blue-green.
+非 [あらず] B175 S8 N(Negative) Not
+面 [めん] B176 S9 N(Face) Face
+革 [つくりかわ かくのかわ] B177 S9 N(Shoe leather) Tanned hide
+韋 [なめしがわ] B178 S9 N() Tanned Leather. This radical is traditionally a 9 stroke radical, however it is used more frequently in a 10 stroke form.
+韭 [にら] B179 S9 N(Leek) Leek
+音 [おと] B180 S9 N(Noisy) Sound
+頁 [おおがい いちのかい ページ] B181 S9 N(Big shell) Big 'shell'. Radical 1 and radical 154, Page.
+風 [かぜ] B182 S9 N(Wind) Wind
+飛 [とぶ] B183 S9 N(Flying) To fly
+食 [しょく] B184 S9 N(Food) Food
+首 [くび] B185 S9 N(Neck) Neck
+香 [におい かおり] B186 S9 N(Perfume) Odor, Fragrance
+馬 [うま] B187 S10 N(Horse) Horse
+骨 [ほね] B188 S10 N(Bone) Bone
+高 [たかい] B189 S10 N(High) High
+髟 [かみ] B190 S10 N(Long hai) Hair
+鬥 [とう たたかい とうがまえ たたかいがまえ] B191 S10 N(Broken gate) Fighting
+鬯 [かおりぐさ] B192 S10 N(Herb) Fragrant herbs
+鬲 [あしあかまえ] B193 S10 N(Tripod) Tripod
+鬼 [おに] B194 S10 N(Devil) Devil
+魚 [さかな うお] B195 S11 N(Fish) Fish
+鳥 [とり] B196 S11 N(Bird) Bird
+鹵 [しお] B197 S11 N(Salt) Salt
+鹿 [しか] B198 S11 N(Deer) Deer
+麦 [むぎ] B199 S11 N(Wheat) Wheat
+麻 [あさ] B200 S11 N(Hemp) Hemp
+黄 [きいろ] B201 S12 N(Yellow) Yellow
+黍 [きび] B202 S12 N(Millet) Millet
+黒 [くろい] B203 S12 N(Black) Black. This is actually the 11 stroke variant. Just like radical 80 the two dots may be simplified to a vertical line.
+黹 [ぬう] B204 S12 N(Sewing) To sew, To embroider
+黽 [あおがえる] B205 S13 N(Frog) Frog
+鼎 [かまえ] B206 S13 N(Kettle) Kettle. This radical can also be drawn with 12 strokes, however historically it is 13 strokes and is hence counted as such.
+鼓 [つずみ] B207 S14 N(Drum) Hand-drum
+鼠 [ねずみ] B208 S14 N(Rat) Rat
+鼻 [はな] B209 S14 N(Nose) Nose
+斉 [さい ひとしい] B210 S14 N(Mr. Saito) Alike. There is no EUC code for the 14 stroke version of this kanji. This is it's 8 stroke variant.
+歯 [は] B211 S15 N(Tooth) Tooth
+龍 [たつ] B212 S16 N(Big Dragon) Dragon
+亀 [かめ] B213 S16 N(Turtle) Turtle. There is no EUC code for the 16 stroke version of this kanji. This is its 11 stroke variant.
+龠 [ふえ] B214 S17 N(Flute) Flute

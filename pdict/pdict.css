@@ -1,0 +1,124 @@
+/* simple visualisation for the pdict.xml file */
+
+particles:before		{	content: attr(header);
+								font-size: xx-large;
+							}
+particles				{	display:block;
+								text-align: center;
+								margin-top: 1em;
+
+							}
+
+license					{	display: block;
+								border: 1px dotted grey;
+								margin: 2em;
+								color: #999999;
+								text-align: left;
+							}
+
+header					{	display: block;
+								background-color: #EEEEFF;
+								border-bottom: 1px dotted grey;
+								text-align: left;
+							}
+
+notice					{	display: block;
+								border: 1px dotted black;
+								margin: 2em;
+								text-align: left;
+							}
+para						{	display: block;
+								margin: 0.5em;
+							}
+line						{	display: block; }
+
+gyou:before			{	content: attr(kana); }
+gyou						{	display: block;
+								font-weight: bold;
+								border-top: 1px solid grey;
+								border-right: 1px solid grey;
+								border-bottom: 1px solid grey;
+								text-align: right;
+								width: 5em;
+								padding-top: 0.15em;
+								margin-top: 1em;
+								background-color: #E0E0F0;
+							}
+gyou:after				{	content: "行"; }
+
+entry					{	display: block;
+								border: solid 1px black;
+								margin: 0.5em;
+								padding: 0.3em;
+								text-align: left;
+							}
+
+particle					{	font-size: large;
+								font-weight: bold; }
+
+literary:before		{	content: "("; }
+literary					{	}
+literary:after			{	content: ")"; }
+
+compound:before	{	content: "["}
+compound				{	font-size: small; }
+compound:after		{	content: "]"}
+
+use:before				{	content: "use: ";
+								font-variant: small-caps;
+							}
+use						{	display: block; }
+
+description:before	{	content: "description: ";
+								font-variant: small-caps;
+							}
+description			{	display: block; }
+
+roles						{	display: none; }
+role						{	display: none; }
+
+see:before				{	content: "see: ";
+								font-variant: small-caps;
+							}
+see						{	display: block}
+
+contrast:before		{	content: "contrast: ";
+								font-variant: small-caps;
+							}
+contrast				{	display: block; }
+
+example:before		{	content: attr(role);
+								font-style: italic;
+								color: #8899ff;
+							}
+example					{	display: block;
+								margin-left:0.4em;
+								background-color: #f0f0ff;
+							}
+
+phrase					{	display: block;
+								margin-left: 0.5em;
+							}
+
+explanation			{	display: block;
+								background-color: #ffffff;
+								padding-top: 0.4em;
+								margin-bottom: 0.5em;
+							}
+
+/* particle highlight */
+p 							{	color: #ff0000; }
+s 							{	border-bottom: 1px dotted #000066; }
+
+
+
+/* RUBY CODE */
+
+ruby						{	display: inline-table;
+								text-align: center;
+								vertical-align: -0.25em;
+							}
+rb							{	display: table-row-group; }
+rt							{	display: table-header-group;
+								font-size: 60%;
+							}
