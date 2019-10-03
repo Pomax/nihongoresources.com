@@ -40,7 +40,7 @@ hiragana	katakana	translation	applies to	more specifically
 いそいそ	イソイソ	moving happily	manga sound effects
 いそいそ	イソイソ	"eager, cheerful, lighthearted"	mood	happy
 いちゃいちゃ	イチャイチャ	displaying public affection	manga sound effects
-いちゃいちゃ	イチャイチャ	"flirting, publically showing affection"	personal attitude	undesirable
+いちゃいちゃ	イチャイチャ	"flirting, publicly showing affection"	personal attitude	undesirable
 いちゃくらいちゃくら	イチャクライチャクラ	displaying public affection	manga sound effects
 いらいら	イライラ	"an irritating, irksome feeling (such as something stuck in the throat)"	feelings
 いらいら	イライラ	fuming (with anger)	manga sound effects
@@ -72,7 +72,7 @@ hiragana	katakana	translation	applies to	more specifically
 うっすり	ウッスリ	"faintly, thinly"	resultant state
 うっとり	ウットリ	"rapt stare, captivated, enthralled"	eye expressions
 うっとり	ウットリ	rapt with beauty	manga sound effects
-うっとり	ウットリ	"in rapture, in extacy"	mental state
+うっとり	ウットリ	"in rapture, in ecstacy"	mental state
 うつら	ウツラ	half-asleep	manga sound effects
 うつらうつら	ウツラウツラ	"drowsy, half asleep, dazed"	body function	sleep
 うと	ウト	nodding off	manga sound effects
@@ -88,10 +88,10 @@ hiragana	katakana	translation	applies to	more specifically
 うらうら	ウラウラ	refreshingly bright	weather	sunlight
 うりゃー	ウリャー	"yelled when charging, or when one is about to do something involving substantial the sound made by someone who is exerting physical effort, or doing something that involves substantial the sound made by someone who is exerting physical effort. "	manga sound effects
 うろうろ	ウロウロ	loitering	performing an action
-うわー	ウワー	flabberghasted exclamation	manga sound effects
+うわー	ウワー	flabbergasted exclamation	manga sound effects
 うわーん	ウワーン	crying	onomatopoeia	human noises
 うん	ウン	nodding in understanding	performing an action
-うんうん	ウンウン	"groaning with pain, to agonise"	body function
+うんうん	ウンウン	"groaning with pain, to agonize"	body function
 うんうん	ウンウン	groaning	onomatopoeia	human noises
 うんうん	ウンウン	nodding in agreement repeatedly	performing an action
 うんぎり	ウンギリ	"fed up, tired of"	mental state
@@ -127,7 +127,7 @@ hiragana	katakana	translation	applies to	more specifically
 おっとり	オットリ	"dignified, even-tempered, stoic"	personal traits
 おどおど	オドオド	"timorous, at a loss (through insecurity)"	mental state
 おめおめ	オメオメ	"unbearable disgrace, unbearable shame"	emotions	shame
-おらおら	オラオラ	"said when doing something violently repetetively, like punching someone"	manga sound effects
+おらおら	オラオラ	"said when doing something violently repetitively, like punching someone"	manga sound effects
 おりゃ	オリャ	"yelled when charging, or when one is about to do something involving substantial the sound made by someone who is exerting physical effort"	manga sound effects
 おろおろ	オロオロ	"shock, confusion, bafflement"	manga sound effects
 おろおろ	オロオロ	"confused, worried, not knowing what to do"	mental state
@@ -163,7 +163,7 @@ hiragana	katakana	translation	applies to	more specifically
 かくん	カクン	"jolting, jerking"	motions
 がくん	ガクン	"collapsing, falling"	manga sound effects
 がくん	ガクン	to lose heart	mood	down
-がくん	ガクン	fall apart	motions	desintegrate
+がくん	ガクン	fall apart	motions	disintegrate
 がくん	ガクン	twist/bend with a jerk	motions
 がくん	ガクン	suddenly decline	motions
 がくん	ガクン	jolt strongly	motions
@@ -171,19 +171,19 @@ hiragana	katakana	translation	applies to	more specifically
 かさ	カサ	rustle	manga sound effects
 がさ	ガサ	rustle	manga sound effects
 かさかさ	カサカサ	"a coarse, dried out feeling"	feelings
-かさかさ	カサカサ	crumble	motions	desintegrate
+かさかさ	カサカサ	crumble	motions	disintegrate
 かさかさ	カサカサ	rumbling	onomatopoeia
 かさかさ	カサカサ	"dull, harsh"	personal attitude
 かさかさ	カサカサ	"dry, rough"	physical state	dry
 がさがさ	ガサガサ	"a coarse, dried out feeling, coarse than かさかさ"	feelings
-がさがさ	ガサガサ	crumble	motions	desintegrate
+がさがさ	ガサガサ	crumble	motions	disintegrate
 がさがさ	ガサガサ	rumbling	onomatopoeia
 がさがさ	ガサガサ	"unsophisticated, ill-mannered"	personal traits	undesirable
 がさがさ	ガサガサ	"dried out, coarse"	physical state	dry
 かさこそ	カサコソ	rumbling	onomatopoeia
 がさごそ	ガサゴソ	rumbling	onomatopoeia
-かさっ	カサッ	falling off by crumbling	motions	desintegrate
-がさっ	ガサッ	falling off by crumbling (with a thud)	motions	desintegrate
+かさっ	カサッ	falling off by crumbling	motions	disintegrate
+がさっ	ガサッ	falling off by crumbling (with a thud)	motions	disintegrate
 がさっ	ガサッ	thudding	onomatopoeia
 がさっ	ガサッ	to move (not per se literally) in large numbers	quantity
 がし	ガシ	grab	manga sound effects
@@ -211,7 +211,7 @@ hiragana	katakana	translation	applies to	more specifically
 がたがた	ガタガタ	"complaining, rattling, giving unwanted advice"	speech
 がたがた	ガタガタ	"shaky, ill-balanced"	structure
 かたこと	カタコト	clattering	onomatopoeia
-がたっ	ガタッ	suddden decline	motions
+がたっ	ガタッ	sudden decline	motions
 がたっ	ガタッ	clattering	onomatopoeia
 がたっ	ガタッ	a sudden decline in health	physical health	poor
 がたぴし	ガタピシ	falling apart	form
@@ -511,7 +511,7 @@ hiragana	katakana	translation	applies to	more specifically
 きゅるる	キュルル	sound of a growling stomach	manga sound effects
 ぎょっ	ギョッ	"shocked, aghast"	mental state	scared
 きょときょと	キョトキョト	looking around nervously	eye expressions
-きょとん	キョトン	"stupified, dumbfounded"	facial expression
+きょとん	キョトン	"stupefied, dumbfounded"	facial expression
 きょとん	キョトン	"dazed, blank"	mental state	not with it
 きょろきょろ	キョロキョロ	looking around restlessly	eye expressions
 きょろきょろ	キョロキョロ	searching for something with one's eyes	manga sound effects
@@ -561,7 +561,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぐ	グ	"grabbing, pulling"	manga sound effects
 ぐ	グ	sound of a sleeping person	manga sound effects
 ぐ	グ	sound of a growling stomach	manga sound effects
-くあくあ	クアクア	quak	onomatopoeia	duck
+くあくあ	クアクア	quack	onomatopoeia	duck
 ぐあっはは	グアッハハ	evil laughter	manga sound effects
 ぐあはは	グアハハ	evil laughter	manga sound effects
 ぐい	グイ	grab	manga sound effects
@@ -588,13 +588,13 @@ hiragana	katakana	translation	applies to	more specifically
 ぐーすか	グースカ	sleeping noise	onomatopoeia	human noises
 ぐーっ	グーッ	extreme concentration	manga sound effects
 ぐおー	グオー	a roar	manga sound effects
-ぐおん	グオン	the sound of a tumbledryer	manga sound effects
+ぐおん	グオン	the sound of a tumble dryer	manga sound effects
 くかー	クカー	sleepy breathing	manga sound effects
 くきゅるる	クキュルル	sound of a growling stomach	manga sound effects
 くく	クク	giggling	manga sound effects
 くくーっ	ククーッ	with gusto	performing an action	drinking
 くくく	ククク	giggling	manga sound effects
-くくっ	ククッ	laughing but trying to supress it (more drawn out than くっくっ)	laughter
+くくっ	ククッ	laughing but trying to suppress it (more drawn out than くっくっ)	laughter
 くくり	ククリ	"distinct, clear"	manga sound effects
 くさくさ	クサクサ	"blue, wretched"	mood	down
 くさくさ	クサクサ	"blue, wretched"	mood	down
@@ -606,7 +606,7 @@ hiragana	katakana	translation	applies to	more specifically
 くしゃくしゃ	クシャクシャ	"wretched, frustrated"	mood	down
 くしゃくしゃ	クシャクシャ	crumpled	resultant state
 くしゃくしゃ	クシャクシャ	mumbling against reason	speech
-くしゃくしゃ	クシャクシャ	mumur under one's breath	speech
+くしゃくしゃ	クシャクシャ	murmur under one's breath	speech
 ぐしゃぐしゃ	グシャグシャ	"smash, mash"	action
 ぐしゃぐしゃ	グシャグシャ	"crushed, smashed"	resultant state
 ぐじゃぐじゃ	グジャグジャ	soggy	resultant state
@@ -620,7 +620,7 @@ hiragana	katakana	translation	applies to	more specifically
 くすくす	クスクス	snickering	laughter
 ぐすぐす	グスグス	sniffling	onomatopoeia	human noises
 ぐずぐず	グズグズ	"grumble, complaining about everything"	speech
-ぐずぐず	グズグズ	hestitating	work attitude
+ぐずぐず	グズグズ	hesitating	work attitude
 くすんくすん	クスンクスン	sniffing	onomatopoeia	human noises
 くた	クタ	"droopy, wilted"	manga sound effects
 くたくた	クタクタ	"totally exhausted, worn out, solf, pulpy"	physical health	bad
@@ -647,7 +647,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぐちゃぐちゃ	グチャグチャ	"complaining endlessly, griping"	speech
 ぐちゃぐちゃ	グチャグチャ	"mushy, pulpy"	texture
 くっ	クッ	suddenly bend	motions
-くっ	クッ	"noticably, markedly"	resultant state
+くっ	クッ	"noticeably, markedly"	resultant state
 ぐっ	グッ	"grab, pull with a jerk"	action
 ぐっ	グッ	to feel / be choked	body function
 ぐっ	グッ	feeling a lump in one's throat	emotions	being moved
@@ -657,12 +657,12 @@ hiragana	katakana	translation	applies to	more specifically
 ぐっ	グッ	strong indignation welling up	mood	nervous
 ぐっ	グッ	taking a gulp	performing an action	drinking
 ぐっ	グッ	to force something to a sudden halt	performing an action
-ぐっ	グッ	"noticably, markedly"	resultant state
+ぐっ	グッ	"noticeably, markedly"	resultant state
 ぐっ	グッ	markedly	resultant state
 くっきり	クッキリ	"distinct, clearly"	resultant state
 くっきり	クッキリ	distinctive	sight
 くっきり	クッキリ	standing out	state
-くっくっ	クックッ	laughing but trying to supress it.	laughter
+くっくっ	クックッ	laughing but trying to suppress it.	laughter
 くっくっ	クックッ	coo	onomatopoeia	dove
 ぐつぐつ	グツグツ	boiling	onomatopoeia
 ぐつぐつ	グツグツ	simmering	state	liquids
@@ -675,7 +675,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぐったり	グッタリ	"to lie sprawled, dead tired, withered"	physical health	bad
 ぐったり	グッタリ	"wilted, drooping"	resultant state
 ぐでんぐでん	グデングデン	drunk and passing out	body function	drunk
-くどくど	クドクド	repetetive	manga sound effects
+くどくど	クドクド	repetitive	manga sound effects
 くどくど	クドクド	hammering on something	speech
 くにゃ	クニャ	to suddenly bend (once)	performing an action
 ぐにゃ	グニャ	sudden mental realisation	manga sound effects
@@ -734,11 +734,11 @@ hiragana	katakana	translation	applies to	more specifically
 ぐるん	グルン	tumbling	performing an action
 ぐるんぐるん	グルングルン	swing around	action
 くわっ	クワッ	suddenly opening the eyes with an angry look	eye expressions
-くん	クン	"noticably, markedly"	resultant state
+くん	クン	"noticeably, markedly"	resultant state
 ぐん	グン	straining the body 	performing an action
 ぐん	グン	to force something to a sudden halt	performing an action
 ぐん	グン	to grow rapidly (growth spurt)	physical health	good
-ぐん	グン	"noticably, markedly, drasticaly changing"	resultant state
+ぐん	グン	"noticeably, markedly, drasticaly changing"	resultant state
 ぐん	グン	markedly	resultant state
 ぐんあり	グンアリ	"weak, enfeebled, wilted"	physical health	poor
 くんかくんか	クンカクンカ	sniffing	manga sound effects
@@ -752,12 +752,12 @@ hiragana	katakana	translation	applies to	more specifically
 ぐんなり	グンナリ	"wilter, withering"	resultant state
 ぐんにゃり	グンニャリ	"soft, lacking tension (more emphatc than ぐにゃり)"	physical health	poor
 げ	ゲ	the momentary sensation of (wanting to) vomit	body function
-げーげー	ゲーゲー	vomitting	body function
+げーげー	ゲーゲー	vomiting	body function
 けたけた	ケタケタ	an out of place burly laugh	laughter
 げたげた	ゲタゲタ	"an out of place burly laugh, more vulgar than けたけた"	laughter
 けちょんけちょん	ケチョンケチョン	to take a beating	mental state
 げっ	ゲッ	the momentary sensation of (wanting to) vomit	body function
-げっそり	ゲッソリ	"disappoined, colloquailly interchanged with がっかり"	emotions	unease
+げっそり	ゲッソリ	"disappointed, colloquially interchanged with がっかり"	emotions	unease
 げっそり	ゲッソリ	"emaciated, haggard"	physical health	poor
 げっそり	ゲッソリ	to look haggard	the body
 けばけば	ケバケバ	"lavish, gaudy, garish"	to appear to be
@@ -773,7 +773,7 @@ hiragana	katakana	translation	applies to	more specifically
 けろけろ	ケロケロ	ribbit	onomatopoeia	frog
 げろげろ	ゲロゲロ	to continuously throw up	body function
 けろっ	ケロッ	"calm, act like nothing happened, remaining cool"	mental actions
-けろり	ケロリ	"uneffected, casual, unimpressed"	manga sound effects
+けろり	ケロリ	"unaffected, casual, unimpressed"	manga sound effects
 けろり	ケロリ	"calm, act like nothing happened, remaining cool"	mental actions
 けろり	ケロリ	sudden disappearance of some state	resultant state
 げわっげわっ	ゲワッゲワッ	quack	onomatopoeia	duck
@@ -929,14 +929,14 @@ hiragana	katakana	translation	applies to	more specifically
 ころっ	コロッ	"a sudden, abrupt, death"	physical health	death
 ころっ	コロッ	completely change (suddenly)	resultant state
 ごろっ	ゴロッ	"sudden, single, roll"	motions	rolling
-ごろっ	ゴロッ	lieing down lazily 	performing an action
+ごろっ	ゴロッ	lying down lazily 	performing an action
 ころり	コロリ	"come around completely, totally changing opinion"	action
 ころり	コロリ	forgetting just like that	mental state
 ころり	コロリ	"roll over, fall down flat"	performing an action
 ころり	コロリ	easily changed [personality]	personal traits
 ころり	コロリ	"a sudden, abrupt, death"	physical health	death
 ごろり	ゴロリ	rolling once	motions	rolling
-ごろり	ゴロリ	lieing down lazily 	performing an action
+ごろり	ゴロリ	lying down lazily 	performing an action
 ころりころり	コロリコロリ	rolling at intervals	motions	rolling
 ころん	コロン	dropping something	manga sound effects
 ごろん	ゴロン	rolling over	manga sound effects
@@ -986,7 +986,7 @@ hiragana	katakana	translation	applies to	more specifically
 さっ	サッ	dodging something quickly	performing an action
 さっ	サッ	"quickly, adroitly"	performing an action
 さっ	サッ	"swift, fast"	performing an action
-ざっ	ザッ	"strong, enegetic movement"	manga sound effects
+ざっ	ザッ	"strong, energetic movement"	manga sound effects
 ざっ	ザッ	pouring	onomatopoeia
 ざっ	ザッ	skim over	performing an action	read
 ざっ	ザッ	"quick, rough"	performing an action
@@ -1022,13 +1022,13 @@ hiragana	katakana	translation	applies to	more specifically
 さらさら	サラサラ	powdery	weather	snow
 さらさら	サラサラ	eloquent	writing
 ざらざら	ザラザラ	a rough and coarse feeling	feelings
-ざらざら	ザラザラ	crumbling off (granular)	motions	desintegrate
+ざらざら	ザラザラ	crumbling off (granular)	motions	disintegrate
 ざらざら	ザラザラ	"rough, coarse (to the touch)"	physical state	rough
 ざらざら	ザラザラ	"coarse, sandy, gritty"	texture
 さらっ	サラッ	refreshed and sharp	feelings
 さらっ	サラッ	crisply dry	physical state	dry
 さらっ	サラッ	"dry, thin"	texture
-さらっ	サラッ	"fresh,dry, crisp"	weather	clear
+さらっ	サラッ	"fresh, dry, crisp"	weather	clear
 さらり	サラリ	something that gives a fresh feeling	feelings
 さらり	サラリ	"easygoing, not holding grudges"	personal relations
 さらり	サラリ	"frank, easygoing"	personal traits
@@ -1185,7 +1185,7 @@ hiragana	katakana	translation	applies to	more specifically
 しょぼしょぼ	ショボショボ	"narrowing the eyes, blinking, unable to open the eyes"	eye expressions
 しょぼしょぼ	ショボショボ	"sad, moping"	manga sound effects
 しょぼしょぼ	ショボショボ	low in spirit	mood	down
-しょぼしょぼ	ショボショボ	to lose one's livelyness	physical health	poor
+しょぼしょぼ	ショボショボ	to lose one's liveliness	physical health	poor
 しょぼしょぼ	ショボショボ	"light, gloomy"	weather	rain
 しょぼん	ショボン	feeling miserable a moment	mood	down
 しょぼん	ショボン	deflated	resultant state
@@ -1218,7 +1218,7 @@ hiragana	katakana	translation	applies to	more specifically
 しんなり	シンナリ	"flexible, soft"	form
 しんなり	シンナリ	"supple, flexible, soft"	the body
 しんねりむっつり	シンネリムッツリ	"moody, inhospitably"	mood	down
-しんまり	シンマリ	"calm, peacefull feeling"	mood	calm
+しんまり	シンマリ	"calm, peaceful feeling"	mood	calm
 しんみり	シンミリ	"heart-to-heart, touching"	emotions	being moved
 す	ス	breathing in	manga sound effects
 す	ス	"slow movement (garments sliding off, people moving smoothly, etc)"	manga sound effects
@@ -1262,7 +1262,7 @@ hiragana	katakana	translation	applies to	more specifically
 すかり	スカリ	feeling of refreshment	manga sound effects
 ずき	ズキ	sharp pain	manga sound effects
 ずきずき	ズキズキ	"a throbbing, pulsing pain"	feelings	pain
-ずきん	ズキン	"a pang of consciousness, a momentary powerfull emotion"	emotions
+ずきん	ズキン	"a pang of consciousness, a momentary powerful emotion"	emotions
 ずきん	ズキン	"a sharp, single, pain (stronger than ずきずき)"	feelings	pain
 ずきんずきん	ズキンズキン	continuous throbbing pain	feelings	pain
 すく	スク	"getting up, standing up"	manga sound effects
@@ -1326,7 +1326,7 @@ hiragana	katakana	translation	applies to	more specifically
 すなり	スナリ	"slender, smooth, graceful"	manga sound effects
 すぱ	スパ	cutting or breaking something	manga sound effects
 ずば	ズバ	slicing with a single cut	manga sound effects
-すぱすぱ	スパスパ	repetetively cut cleanly	performing an action	cutting
+すぱすぱ	スパスパ	repetitively cut cleanly	performing an action	cutting
 すぱすぱ	スパスパ	puffing away at a smokable	performing an action
 ずばずば	ズバズバ	"getting to the point, not wasting words"	speech
 すぱっ	スパッ	a swift single cut	performing an action	cutting
@@ -1338,7 +1338,7 @@ hiragana	katakana	translation	applies to	more specifically
 ずばり	ズバリ	to hit the mark	mental actions	ideas
 ずばり	ズバリ	with a bold cut	performing an action	cutting
 ずばり	ズバリ	"blunt, unreserved"	speech
-すぴぐ	スピグ	"peacful sleep, a whistling sound"	manga sound effects
+すぴぐ	スピグ	"peaceful sleep, a whistling sound"	manga sound effects
 すぶ	スブ	eyes closing	manga sound effects
 ずぶずぶ	ズブズブ	sopping wet	physical state	wet
 すべすべ	スベスベ	smooth	manga sound effects
@@ -1396,7 +1396,7 @@ hiragana	katakana	translation	applies to	more specifically
 ずんぐり	ズングリ	dumpy	manga sound effects
 ずんぐり	ズングリ	"short and fat, short and pudgy"	the body
 ずんぐりむっくり	ズングリムックリ	"short and fat, short and pudgy"	the body
-ずんずん	ズンズン	"rapidly, noticably, markedly"	resultant state
+ずんずん	ズンズン	"rapidly, noticeably, markedly"	resultant state
 すんなり	スンナリ	slender	form
 すんなり	スンナリ	"smoothly, without resistance"	motions
 すんなり	スンナリ	slender	the body
@@ -1455,7 +1455,7 @@ hiragana	katakana	translation	applies to	more specifically
 だーん	ダーン	"""kapow!"""	onomatopoeia
 だくだく	ダクダク	sweating profusely	body function
 だくだく	ダクダク	"gushing, running off"	state	liquids
-たけぱき	タケパキ	"prompty, speedily"	action
+たけぱき	タケパキ	"promptly, speedily"	action
 たじたじ	タジタジ	staggering	performing an action
 だだだ	ダダダ	the sound or running away	manga sound effects
 たたたた	タタタタ	light running	manga sound effects
@@ -1471,7 +1471,7 @@ hiragana	katakana	translation	applies to	more specifically
 だぶだぶ	ダブダブ	overweight and flabby	the body
 たらたら	タラタラ	to continuously drip (sweat)	body function
 たらたら	タラタラ	full of complaint	speech
-たらたら	タラタラ	"to be full of it, to incessently be [boastful, flattering, evasive, etc.]"	speech
+たらたら	タラタラ	"to be full of it, to incessantly be [boastful, flattering, evasive, etc.]"	speech
 たらたら	タラタラ	dripping	state	liquids
 だらだら	ダラダラ	"continuous dripping of heavy liquid like sweat, blood, etc."	manga sound effects
 だらだら	ダラダラ	dragging on without end	resultant state
@@ -1499,7 +1499,7 @@ hiragana	katakana	translation	applies to	more specifically
 ちかちか	チカチカ	hinderingly sparkling	state	light
 ちかっ	チカッ	momentarily dazzling	state	light
 ちくたく	チクタク	"""tick tock"""	onomatopoeia
-ちくちく	チクチク	"powerful emototion, like being stabbed with a needle"	emotions
+ちくちく	チクチク	"powerful emotion, like being stabbed with a needle"	emotions
 ちくちく	チクチク	"itchy, needlelike intermittent pain"	feelings	pain
 ちくちく	チクチク	"pricking, tingling sensation"	feelings
 ちくちく	チクチク	"prick, quick and repeatedly with something needlelike"	performing an action	stabbing
@@ -1573,7 +1573,7 @@ hiragana	katakana	translation	applies to	more specifically
 ちょっきり	チョッキリ	exactly	temporal aspect
 ちょっくら	チョックラ	"a little, a bit"	quantity
 ちょっくら	チョックラ	a little	temporal aspect
-ちょっくらちょい	チョックラチョイ	too litte	quantity
+ちょっくらちょい	チョックラチョイ	too little	quantity
 ちょっぴり	チョッピリ	"a little, a bit"	quantity
 ちょびちょび	チョビチョビ	a little at a time	quantity
 ちょびっ	チョビッ	a minute amount	quantity
@@ -1600,9 +1600,9 @@ hiragana	katakana	translation	applies to	more specifically
 ちりちり	チリチリ	"curly, frizzy"	manga sound effects
 ちりちり	チリチリ	a tingle of heat	manga sound effects
 ちりちり	チリチリ	chirp	onomatopoeia	cricket
-ちりちり	チリチリ	"shrivelled, wrinkled"	resultant state
+ちりちり	チリチリ	"shriveled, wrinkled"	resultant state
 ちりぢり	チリヂリ	"scatter, disperse"	motions	disassociate
-ちりぢり	チリヂリ	"shrivelled, wrinkled"	resultant state
+ちりぢり	チリヂリ	"shriveled, wrinkled"	resultant state
 ちりん	チリン	chime	manga sound effects
 ちろちろ	チロチロ	"small flame, flickering (of a small flame)"	state	fire
 ちろん	チロン	quick sideways glance	manga sound effects
@@ -1617,7 +1617,7 @@ hiragana	katakana	translation	applies to	more specifically
 つー	ツー	buzz	manga sound effects
 つー	ツー	"straight, rapid"	motions
 つーかー	ツーカー	on the same frequency	personal relations
-つーっ	ツーッ	tears rappidly running down the face	crying
+つーっ	ツーッ	tears rapidly running down the face	crying
 つーっ	ツーッ	"straight, rapid"	motions
 つーつー	ツーツー	"smoothly, without resistance"	motions
 つかつか	ツカツカ	walking resolute	action
@@ -1832,7 +1832,7 @@ hiragana	katakana	translation	applies to	more specifically
 どんどん	ドンドン	drumming	onomatopoeia
 どんどん	ドンドン	move with vigour	resultant state
 とんとんとん	トントントン	chopping	manga sound effects
-とんとんとん	トントントン	repetetive action	manga sound effects
+とんとんとん	トントントン	repetitive action	manga sound effects
 どんぴしゃり	ドンピシャリ	on the mark	resultant state
 どんより	ドンヨリ	"dull, leaden, gloomy"	weather	clear
 なし	ナシ	smack	manga sound effects
@@ -2099,7 +2099,7 @@ hiragana	katakana	translation	applies to	more specifically
 ばらばら	バラバラ	"scattered, sparse"	spacial orientation
 ばらばら	バラバラ	sound of hail hitting and scattering	weather	hail
 ぱらぱら	パラパラ	sprinkle (sparsely)	action
-ぱらぱら	パラパラ	"crumble, scatter"	motions	desintegrate
+ぱらぱら	パラパラ	"crumble, scatter"	motions	disintegrate
 ぱらぱら	パラパラ	scatter sparsely	motions	disassociate
 ぱらぱら	パラパラ	flapping	onomatopoeia
 ぱらぱら	パラパラ	pelting	onomatopoeia
@@ -2119,7 +2119,7 @@ hiragana	katakana	translation	applies to	more specifically
 ばりばり	バリバリ	ripping something thick	performing an action	ripping
 ばりばり	バリバリ	"with might, energetically"	work attitude
 ぱりぱり	パリパリ	electric (or general energy) crackling	manga sound effects
-ぱりぱり	パリパリ	breaking/tearing something light and thin	motions	desintegrate
+ぱりぱり	パリパリ	breaking/tearing something light and thin	motions	disintegrate
 ぱりぱり	パリパリ	cracking	onomatopoeia
 ぱりぱり	パリパリ	"ripping something light, thin"	performing an action	ripping
 ぱりぱり	パリパリ	"grandish, imposing, less powerful than ぱりっ"	personal attire
@@ -2176,19 +2176,19 @@ hiragana	katakana	translation	applies to	more specifically
 ぴし	ピシ	"crack, snap, smack"	manga sound effects
 びしっ	ビシッ	snapping something	action	breaking
 びしっ	ビシッ	"strict, rigorous"	action
-びしっ	ビシッ	cracking	motions	desintegrate
+びしっ	ビシッ	cracking	motions	disintegrate
 びしっ	ビシッ	cracking	onomatopoeia
 びしっ	ビシッ	strictly correct	personal attire
 ぴしっ	ピシッ	snapping something	action	breaking
 ぴしっ	ピシッ	cracking	onomatopoeia
 ぴしっ	ピシッ	strictly correct	personal attire
-びしっびしっ	ビシッビシッ	repetetively causing snapping sounds	action	breaking
-ぴしっぴしっ	ピシッピシッ	repetetively causing snapping sounds	action	breaking
+びしっびしっ	ビシッビシッ	repetitively causing snapping sounds	action	breaking
+ぴしっぴしっ	ピシッピシッ	repetitively causing snapping sounds	action	breaking
 ひしひし	ヒシヒシ	an overwhelming feeling	emotions
-びしびし	ビシビシ	"repetetively snapping something dry, cylindrical"	action	breaking
+びしびし	ビシビシ	"repetitively snapping something dry, cylindrical"	action	breaking
 びしびし	ビシビシ	snapping something flexible	action	snapping
 びしびし	ビシビシ	"relentless, strictly"	action
-ぴしぴし	ピシピシ	"repetetively snapping something dry, cylindrical"	action	breaking
+ぴしぴし	ピシピシ	"repetitively snapping something dry, cylindrical"	action	breaking
 ぴしぴし	ピシピシ	"severly, harsh"	action
 ぴしぴし	ピシピシ	"criticise, sharp, direct"	speech
 ぴしゃ	ピシャ	splashing	manga sound effects
@@ -2318,7 +2318,7 @@ hiragana	katakana	translation	applies to	more specifically
 びりびり	ビリビリ	"tearing, ripping "	manga sound effects	cloth
 びりびり	ビリビリ	"nervous, strained"	mood	nervous
 びりびり	ビリビリ	shuddering	motions
-びりびり	ビリビリ	repetetively ripping something so that is feels to vibrate	performing an action	ripping
+びりびり	ビリビリ	repetitively ripping something so that is feels to vibrate	performing an action	ripping
 ぴりぴり	ピリピリ	a pricking pain	feelings	pain
 ぴりぴり	ピリピリ	"pungent, spicy, to smart"	flavour
 ぴりぴり	ピリピリ	a sharp sensation	manga sound effects
@@ -2423,7 +2423,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぶすぶす	ブスブス	something smoldering or smoking	manga sound effects
 ぶすぶす	ブスブス	muttered complaining	manga sound effects
 ぶすぶす	ブスブス	rustling	onomatopoeia	fire
-ぶすぶす	ブスブス	repetetively stabbing	performing an action	cutting
+ぶすぶす	ブスブス	repetitively stabbing	performing an action	cutting
 ぶすぶす	ブスブス	complaining behind someone's back	speech
 ぶすぶす	ブスブス	"smolder, simmer"	state	fire
 ぷすぷす	プスプス	sound of something smoldering or smoking	manga sound effects
@@ -2451,13 +2451,13 @@ hiragana	katakana	translation	applies to	more specifically
 ふっくら	フックラ	"puffy, swollen"	form
 ふっくら	フックラ	puffy	the body
 ぷっくり	プックリ	small swelling (round)	form
-ぶつっ	ブツッ	"snapping off, breaking off (suddenly)"	motions	desintegrate
-ぷつっ	プツッ	"snapping off, breaking off (suddenly)"	motions	desintegrate
+ぶつっ	ブツッ	"snapping off, breaking off (suddenly)"	motions	disintegrate
+ぷつっ	プツッ	"snapping off, breaking off (suddenly)"	motions	disintegrate
 ぷつっ	プツッ	"prick, sting, pierce"	performing an action	stabbing
 ふっつり	フッツリ	to [suddenly] definitively break up 	personal relations
 ふっつり	フッツリ	giving up suddenly and completely	resultant state
-ぶっつり	ブッツリ	completely sever by snapping/breaking	motions	desintegrate
-ぷっつり	プッツリ	completely sever by snapping/breaking	motions	desintegrate
+ぶっつり	ブッツリ	completely sever by snapping/breaking	motions	disintegrate
+ぷっつり	プッツリ	completely sever by snapping/breaking	motions	disintegrate
 ぷっつり	プッツリ	to [suddenly] definitively break up 	personal relations
 ぷっつり	プッツリ	giving up suddenly and completely	resultant state
 ふっふっ	フッフッ	laughing under one's breath	laughter
@@ -2469,7 +2469,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぶつぶつ	ブツブツ	"simmering, bubbling"	state	liquids
 ぷつぷつ	プツプツ	"bumpy, dimpled"	form
 ふっむ	フッム	"hmm, hpmf"	manga sound effects
-ぷつり	プツリ	completely sever by snapping/breaking	motions	desintegrate
+ぷつり	プツリ	completely sever by snapping/breaking	motions	disintegrate
 ぷにぷに	プニプニ	"soft, smooth"	manga sound effects
 ふにゃっ	フニャッ	a momentary feeling of something soft and squishy	feelings
 ふにゃふにゃ	フニャフニャ	"soft, flaccid"	feelings
@@ -2711,11 +2711,11 @@ hiragana	katakana	translation	applies to	more specifically
 ぽかんぽかん	ポカンポカン	repetative bonking (being hit with something hollow)	action	striking
 ぽきっ	ポキッ	"breaking something dry, fragile"	action	breaking
 ぽきっ	ポキッ	cracking	onomatopoeia
-ぽきぽき	ポキポキ	"repetetively breaking something dry, fragile"	action	breaking
+ぽきぽき	ポキポキ	"repetitively breaking something dry, fragile"	action	breaking
 ぽきぽき	ポキポキ	"snapping small, fragile things"	action	snapping
 ぽきぽき	ポキポキ	cracking	onomatopoeia
 ぽきり	ポキリ	"breaking something dry, fragile"	action	breaking
-ぽきりぽきり	ポキリポキリ	"repetetively breaking something dry, fragile"	action	breaking
+ぽきりぽきり	ポキリポキリ	"repetitively breaking something dry, fragile"	action	breaking
 ぽきりぽきり	ポキリポキリ	cracking	onomatopoeia
 ぽきん	ポキン	"breaking something dry, fragile"	action	breaking
 ほくほく	ホクホク	"beaming, being pleased with oneself"	facial expression	smiling
@@ -2736,7 +2736,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぼさぼさ	ボサボサ	unkempt	manga sound effects
 ぼさぼさ	ボサボサ	daydreaming	mental state	not with it
 ぽしっ	ポシッ	"absolute correctness, rigidly"	action
-ぽしっ	ポシッ	cracking	motions	desintegrate
+ぽしっ	ポシッ	cracking	motions	disintegrate
 ぼしゃっ	ボシャッ	deflate suddenly	state	air
 ぼそっ	ボソッ	"mumble, murmur"	speech
 ぼそぼそ	ボソボソ	muttered complaining	manga sound effects
@@ -2834,7 +2834,7 @@ hiragana	katakana	translation	applies to	more specifically
 ぼろぼろ	ボロボロ	ragged	personal attire
 ぼろぼろ	ボロボロ	"worn out, falling apart, crumbling"	resultant state
 ぽろぽろ	ポロポロ	tears tumbling down one after the other	crying
-ぽろぽろ	ポロポロ	crumble into pieces	motions	desintegrate
+ぽろぽろ	ポロポロ	crumble into pieces	motions	disintegrate
 ぽろぽろ	ポロポロ	"tumble down, crumble to nothing"	motions	disassociate
 ぽろぽろ	ポロポロ	dry and crumbly	texture
 ほろり	ホロリ	"a single small teardrop, to be touched"	crying
@@ -2923,7 +2923,7 @@ hiragana	katakana	translation	applies to	more specifically
 めー	メー	meee	onomatopoeia	sheep
 めえー	メエー	me-e-e-e-e	onomatopoeia	sheep
 めきめき	メキメキ	quick progress	manga sound effects
-めきめき	メキメキ	"noticably, markedly"	resultant state
+めきめき	メキメキ	"noticeably, markedly"	resultant state
 めきめき	メキメキ	"remarkably, markedly"	resultant state
 めそめそ	メソメソ	sobing in self-pity	emotions	crying
 めそめそ	メソメソ	"whimper, sniffle"	manga sound effects
@@ -2934,7 +2934,7 @@ hiragana	katakana	translation	applies to	more specifically
 めちゃめちゃ	メチャメチャ	"in pieces, a mess"	resultant state
 めちゃめちゃ	メチャメチャ	"all screwed up, not making sense"	resultant state
 めちゃめちゃ	メチャメチャ	"ruined, in shambles"	resultant state
-めっきり	メッキリ	"noticably, markedly"	resultant state
+めっきり	メッキリ	"noticeably, markedly"	resultant state
 めっきり	メッキリ	markedly	resultant state
 めらめら	メラメラ	being devoured by flames	state	fire
 めりめり	メリメリ	"snap, split, crack"	action	snapping
